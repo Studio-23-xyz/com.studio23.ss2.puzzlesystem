@@ -1,10 +1,11 @@
 ﻿using System;
-using Packages.com.bs23.ss2.PuzzleSystem.Runtime.Script.Model;
+using UnityEngine;
 
-namespace Package.com.bs23.ss2.PuzzleSystem.Script.Interface
+
+namespace Studio23.SS2.PuzzleSystem.Interface
 {
     // IPuzzle Interface Definition
-public interface IPuzzle
+public interface IPuzzle 
 {
     // Actions
 
@@ -41,10 +42,10 @@ public interface IPuzzle
     // Properties
 
     // Currently selected dial.
-    Dial SelectedDial { get; set; }
+    IDial SelectedDial { get; set; }
 
     // All dials information.
-    Dial[] Dials { get; }
+    IDial[] Dials { get; }
 
     // Stores information about the puzzle's configuration, including its dials, hints, and solution.
     PuzzleInfo PuzzleInfo { get; }
@@ -58,7 +59,5 @@ public interface IPuzzle
     event Action OnPuzzleReset;
 }
 
-public class Dial
-{
-}
+ 
 }
