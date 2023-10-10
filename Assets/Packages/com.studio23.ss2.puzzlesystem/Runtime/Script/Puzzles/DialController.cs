@@ -8,37 +8,45 @@ using Vector2 = System.Numerics.Vector2;
 public class DialController : MonoBehaviour, IDial
 {
     public bool IsSelected { get; set; }
-    public float CurrentValue { get; }
+    public float CurrentValue { get; set; }
     public event Action<float> OnValueChanged;
-    
+
+
+    public void Initialize()
+    {
+        // todo: Initialize Dial Info
+    }
+
     public void Rotated(Vector2 input)
     {
-        throw new NotImplementedException();
+        // todo: Rotate Dial as per input command
+        // todo: call SetValue
+          
     }
 
     public void Move(Vector2 input)
     {
-        throw new NotImplementedException();
+        // todo: Move Dial as per input command
+       
     }
 
     public void Select()
     {
-        throw new NotImplementedException();
+        // todo: Select Dial as per input command
+        // todo: toggle IsSelected
     }
 
-    public void Deselect()
-    {
-        throw new NotImplementedException();
-    }
+  
 
     public void SetValue(float value)
     {
-        throw new NotImplementedException();
+        // todo: call SetValue
+        // todo: Invoke OnValueChanged
     }
 
     public void Unlock()
     {
-        throw new NotImplementedException();
+        // todo: Unlock Dial will show UI feedback when puzzle is unlocked
     }
 
    

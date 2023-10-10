@@ -8,6 +8,12 @@ namespace Studio23.SS2.PuzzleSystem.Interface
     /// </summary>
     public interface IDial
     {
+        
+        /// <summary>
+        /// HSetup basic info on start or restart.
+        /// </summary>
+        public void Initialize();
+        
         /// <summary>
         /// Handles player input to rotate the dial.
         /// </summary>
@@ -25,10 +31,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// </summary>
         public void Select();
 
-        /// <summary>
-        /// Deselects the dial, ending its interactive state. Changes in UI.
-        /// </summary>
-        public void Deselect();
+         
 
         /// <summary>
         /// Updates/Sets the dial to a new value while rotating or moving. Invokes the OnValueChanged event.
