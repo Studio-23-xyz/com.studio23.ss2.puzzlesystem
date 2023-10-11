@@ -2111,6 +2111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0de13f297becf439cdc31e4c5bb460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Move: {x: 0, y: 0}
+  IsEnter: 0
+  IsExit: 0
 --- !u!224 &5327237556281787905
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2477,7 +2480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557103706733715159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22d8d0691c67fb544a441de70ffe98dc, type: 3}
   m_Name: 
@@ -2492,9 +2495,9 @@ MonoBehaviour:
   puzzleName: 
   resultValue: 
   currentValue: 
-  unselectedColor: {r: 0, g: 0, b: 0, a: 0}
-  selectedColor: {r: 1, g: 1, b: 1, a: 1}
-  solvedColor: {r: 0, g: 0, b: 0, a: 0}
+  unselectedColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 0, g: 1, b: 1, a: 1}
+  solvedColor: {r: 1, g: 0.427451, b: 0, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

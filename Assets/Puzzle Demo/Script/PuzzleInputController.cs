@@ -1,37 +1,43 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Studio23.SS2.PuzzleDemo
 {
     public class PuzzleInputController : MonoBehaviour
     {
-        public Action<Vector2> Moved;
-        public Action<bool> IsEnter;
-        public Action<bool> IsExit;
-        
+        public Vector2 Move;
+        public bool IsEnter;
+        public bool IsExit;
+
+        public event Action<Vector2> OnMoveAction;
+        public event Action<bool> OnEnterAction;
+        public event Action<bool> OnExitAction;
+
         private void Start()
         {
-           Debug.Log("Started!");
+            Debug.Log("Input controller started!");
         }
+
         public void OnMove(InputAction.CallbackContext context)
         {
-              Moved?.Invoke(context.ReadValue<Vector2>().normalized);
+            Move = context.ReadValue<Vector2>().normalized;
+            OnMoveAction?.Invoke(Move);
         }
 
         public void OnEnter(InputAction.CallbackContext context)
         {
-            IsEnter?.Invoke(context.ReadValue<bool>());
+            IsEnter = context.ReadValueAsButton();
+            OnEnterAction?.Invoke(IsEnter);
+            Debug.Log( "Enter: " + IsEnter);
         }
 
         public void OnExit(InputAction.CallbackContext context)
         {
-            IsExit?.Invoke(context.ReadValue<bool>());
+            IsExit = context.ReadValueAsButton();
+            OnExitAction?.Invoke(IsExit);
+            Debug.Log( "Exit: " + IsExit);
         }
-
-
     }
 }

@@ -64,9 +64,9 @@ namespace Studio23.SS2.PuzzleDemo
         }
         private void SetupPuzzleInput()
         {
-            puzzleInputController.Moved += Move;
-            puzzleInputController.IsEnter += StartPuzzle;
-            puzzleInputController.IsExit += StopPuzzle;
+            puzzleInputController.OnMoveAction += Move;
+            puzzleInputController.OnEnterAction += StartPuzzle;
+            puzzleInputController.OnExitAction += StopPuzzle;
         }
 
         private void Move(Vector2 obj)
