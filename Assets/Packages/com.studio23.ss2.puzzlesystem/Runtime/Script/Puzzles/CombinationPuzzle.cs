@@ -22,25 +22,20 @@ namespace Studio23.SS2.PuzzleSystem
        
 
        public bool IsPuzzleStarted { get; set; }
-        public List<IDial> Dials { get; set; }
+        public IDial[] Dials { get; set; }
         public PuzzleInfo PuzzleInfo { get; set; }
         public event Action OnPuzzleStart;
         public event Action OnPuzzleStop;
         public event Action<int> OnSelectedDialChanged;
         public event Action<DialInfo> OnDialValueChanged;
-       
-        public void IPuzzle(PuzzleInfo puzzleInfo)
-        {
-            throw new NotImplementedException();
-        }
-        
+
         public CombinationPuzzle(PuzzleInfo puzzleInfo)
         {
             // todo: Initialize Puzzle Info
             if (puzzleInfo.ResultValues.Capacity == puzzleInfo.CurrentValues.Capacity)
             {
                 PuzzleInfo = puzzleInfo;
-                Dials = new List<IDial>(puzzleInfo.ResultValues.Capacity);
+                
                 SetupPuzzle();
             }
             else
@@ -53,7 +48,7 @@ namespace Studio23.SS2.PuzzleSystem
         { 
             //  Initialize/Setup each Dials
             var capacity = PuzzleInfo.ResultValues.Count;
-            Dials = new List<IDial>(capacity);
+            Dials = new IDial[capacity];
             
             for (int i = 0; i < capacity; i++)
             {
@@ -85,9 +80,8 @@ namespace Studio23.SS2.PuzzleSystem
             if(!IsPuzzleStarted)
             {
                 IsPuzzleStarted = true;
+                OnPuzzleStart?.Invoke();  // Invoke OnPuzzleStart 
                 SelectedDial = 0; // Dials Index Id
-                // Invoke OnPuzzleStart 
-                OnPuzzleStart?.Invoke();
             }
             else
             {
@@ -98,24 +92,25 @@ namespace Studio23.SS2.PuzzleSystem
         {
            if(!IsPuzzleStarted) return;
            Debug.Log($"input : {input}");
-           if(input.x > 0)
+           if(input.y > 0)
            {
                Dials[SelectedDial].AdjustValue(1);
            }
-           else if(input.x < 0)
+           else if(input.y < 0)
            {
                Dials[SelectedDial].AdjustValue(-1);
            }
-           else if(input.y > 0)
+          
+           if(input.x > 0)
            {
                SelectedDial++;
-               if(SelectedDial >= Dials.Count) SelectedDial = 0;
+               if(SelectedDial >= Dials.Length) SelectedDial = 0;
                OnSelectedDialChanged?.Invoke(SelectedDial);
            }
-           else if(input.y < 0)
+           else if(input.x < 0)
            {
                SelectedDial--;
-               if(SelectedDial < 0) SelectedDial = Dials.Count - 1;
+               if(SelectedDial < 0) SelectedDial = Dials.Length - 1;
                OnSelectedDialChanged?.Invoke(SelectedDial);
            }
         }
@@ -130,12 +125,12 @@ namespace Studio23.SS2.PuzzleSystem
             // todo: Unsubscribe to Dials Event
             if(!IsPuzzleStarted) return;
            
-           for (int i = 0; i < Dials.Count; i++)
+           for (int i = 0; i < Dials.Length; i++)
            {
                Dials[i].DialInfo.OnValueChanged -= OnDialValueChanged;
            }
           
-           Dials.Clear();
+           Dials = null;
            PuzzleInfo = null;
            IsPuzzleStarted = false;
            OnPuzzleStop?.Invoke();

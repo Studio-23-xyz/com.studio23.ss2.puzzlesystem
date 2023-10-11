@@ -22,22 +22,40 @@ namespace Studio23.SS2.PuzzleDemo
 
         public void OnMove(InputAction.CallbackContext context)
         {
-            Move = context.ReadValue<Vector2>().normalized;
-            OnMoveAction?.Invoke(Move);
+            if (context.phase == InputActionPhase.Performed)
+            {
+                Move = context.ReadValue<Vector2>().normalized;
+                OnMoveAction?.Invoke(Move);
+                Debug.Log( "Move InputActionPhase.Performed : " + Move);
+            }else if (context.phase == InputActionPhase.Canceled)
+            {
+                Move = Vector2.zero;
+                Debug.Log( "Move InputActionPhase.Canceled: " + Move);
+            }
+           
+            
         }
 
         public void OnEnter(InputAction.CallbackContext context)
         {
-            IsEnter = context.ReadValueAsButton();
-            OnEnterAction?.Invoke(IsEnter);
-            Debug.Log( "Enter: " + IsEnter);
+            if (context.phase == InputActionPhase.Performed)
+            {
+                IsEnter = context.ReadValueAsButton();
+                OnEnterAction?.Invoke(IsEnter);
+                Debug.Log( "Enter: " + IsEnter);
+            }
+            
         }
 
         public void OnExit(InputAction.CallbackContext context)
         {
-            IsExit = context.ReadValueAsButton();
-            OnExitAction?.Invoke(IsExit);
-            Debug.Log( "Exit: " + IsExit);
+            if (context.phase == InputActionPhase.Performed)
+            {
+                IsExit = context.ReadValueAsButton();
+                OnExitAction?.Invoke(IsExit);
+                Debug.Log( "Exit: " + IsExit);
+            }
+            
         }
     }
 }

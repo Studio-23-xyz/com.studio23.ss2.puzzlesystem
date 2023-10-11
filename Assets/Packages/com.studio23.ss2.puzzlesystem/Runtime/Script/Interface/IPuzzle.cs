@@ -64,7 +64,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// <summary>
         /// Puzzle all dials information.
         /// </summary>
-        List<IDial> Dials { get; set; }
+        IDial[] Dials { get; set; }
 
         /// <summary>
         /// Stores information about the puzzle's configuration, including its dials, hints, and solution.

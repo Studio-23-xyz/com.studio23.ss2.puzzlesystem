@@ -86,6 +86,10 @@ namespace Studio23.SS2.PuzzleDemo
 
         private void OnPuzzleStart()
         {
+            /*foreach (Transform child in dialsContainer)
+            {
+                Destroy(child.gameObject);
+            }*/
             for (int i = 0; i < currentValue.Count; i++)
             {
                 var dial = Instantiate(dialPrefab, dialsContainer);
@@ -93,6 +97,7 @@ namespace Studio23.SS2.PuzzleDemo
                 dial.GetComponent<Image>().color = unselectedColor;
             }
             exitPuzzleButton.gameObject.SetActive(true);
+            startPuzzleButton.gameObject.SetActive(false);
         }
         private void OnPuzzleStop()
         {
@@ -102,9 +107,9 @@ namespace Studio23.SS2.PuzzleDemo
         {
             for (int i = 0; i < dialsContainer.childCount; i++)
             {
-                dialsContainer.GetChild(i).GetComponent<Image>().color = unselectedColor;
+                dialsContainer.GetChild(i).GetComponent<Image>().color = i == obj ? selectedColor : unselectedColor;
             }
-            dialsContainer.GetChild(obj).GetComponent<Image>().color = selectedColor;
+            
         }
         private void OnDialValueChanged(DialInfo obj)
         {
