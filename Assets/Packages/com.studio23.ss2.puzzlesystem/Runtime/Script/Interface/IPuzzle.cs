@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Studio23.SS2.PuzzleSystem.Interface
@@ -28,12 +29,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// </summary>
         void StartPuzzle();
 
-        /// <summary>
-        /// Verifies whether the current combination of dial values matches the correct solution (ResultValues).
-        /// </summary>
-        /// <returns>True if the puzzle is solved, false otherwise.</returns>
-        bool CheckResult();
-
+        
         /// <summary>
         /// Provides a hint or clue to the player, aiding them in solving the puzzle.
         /// Useful for UI feedback.
@@ -65,12 +61,12 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// <summary>
         /// Currently selected dial.
         /// </summary>
-        IDial SelectedDial { get; set; }
+        int SelectedDial { get; set; }
 
         /// <summary>
         /// All dials information.
         /// </summary>
-        IDial[] Dials { get; }
+        List<IDial> Dials { get; set; }
 
         /// <summary>
         /// Stores information about the puzzle's configuration, including its dials, hints, and solution.
@@ -96,6 +92,11 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// </summary>
         event Action OnPuzzleReset;
 
+        /// <summary>
+        /// Event triggered when dial selection changed.
+        /// </summary>
+        public event Action<int> OnSelectedDialChanged;
+        
         #endregion
     }
 }

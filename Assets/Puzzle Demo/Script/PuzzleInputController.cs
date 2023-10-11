@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleDemo
 {
     public class PuzzleInputController : MonoBehaviour
     {

@@ -5,49 +5,40 @@ using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
 using Vector2 = System.Numerics.Vector2;
 
-public class DialController : MonoBehaviour, IDial
+namespace Studio23.SS2.PuzzleSystem
 {
-    public bool IsSelected { get; set; }
-    public float CurrentValue { get; set; }
-    public event Action<float> OnValueChanged;
-
-
-    public void Initialize()
+    public class DialController : IDial
     {
-        // todo: Initialize Dial Info
+        public DialInfo DialInfo { get; set; }
+        public event Action<DialInfo> OnValueChanged;
+        
+        public void Initialize(DialInfo dialInfo)
+        {
+            // todo: Initialize Dial Info
+            DialInfo = dialInfo;
+        }
+
+        public void Rotated(Vector2 input)
+        {
+            // todo: Rotate Dial as per input command
+            // todo: call AdjustValue
+        }
+
+        public void Move(Vector2 input)
+        {
+            // todo: Move Dial as per input command
+        }
+        public void AdjustValue(int value)
+        {
+            // todo: call AdjustValue
+            DialInfo.CurrentValue += value;
+            OnValueChanged?.Invoke(DialInfo);
+            // todo: Invoke OnValueChanged
+        }
+
+        public void Unlock()
+        {
+            // todo: Unlock Dial will show UI feedback when puzzle is unlocked
+        }
     }
-
-    public void Rotated(Vector2 input)
-    {
-        // todo: Rotate Dial as per input command
-        // todo: call SetValue
-          
-    }
-
-    public void Move(Vector2 input)
-    {
-        // todo: Move Dial as per input command
-       
-    }
-
-    public void Select()
-    {
-        // todo: Select Dial as per input command
-        // todo: toggle IsSelected
-    }
-
-  
-
-    public void SetValue(float value)
-    {
-        // todo: call SetValue
-        // todo: Invoke OnValueChanged
-    }
-
-    public void Unlock()
-    {
-        // todo: Unlock Dial will show UI feedback when puzzle is unlocked
-    }
-
-   
 }
