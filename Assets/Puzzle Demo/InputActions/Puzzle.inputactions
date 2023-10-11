@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Open",
+                    "type": "Button",
+                    "id": "6158ef4d-f217-4868-b82b-13215b385866",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -146,17 +155,6 @@
                 },
                 {
                     "name": "",
-                    "id": "65eb2a6e-83b0-4186-a0dc-390dbe2ff78d",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "dff5f464-6f97-4649-bdb8-65ff2187478b",
                     "path": "<Gamepad>/dpad",
                     "interactions": "",
@@ -207,6 +205,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb93f49d-6a14-4461-84db-3672b4691d95",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Open",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a35027aa-ef1b-441c-8f6d-1357a10e04d6",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Open",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

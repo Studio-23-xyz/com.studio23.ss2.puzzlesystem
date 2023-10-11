@@ -3,36 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace Studio23.SS2.PuzzleDemo
 {
     public class PuzzleInputController : MonoBehaviour
     {
-        public Vector2 Move;
-        public float MoveM;
-        public bool IsEnter;
-        public bool IsExit;
-
+        public Action<Vector2> Moved;
+        public Action<bool> IsEnter;
+        public Action<bool> IsExit;
+        
         private void Start()
         {
            Debug.Log("Started!");
         }
         public void OnMove(InputAction.CallbackContext context)
         {
-            
-            Move = context.ReadValue<Vector2>().normalized; // vector 2 while press
-            MoveM = Move.sqrMagnitude;
-           
+              Moved?.Invoke(context.ReadValue<Vector2>().normalized);
         }
 
         public void OnEnter(InputAction.CallbackContext context)
         {
-            IsEnter = context.ReadValue<bool>();
+            IsEnter?.Invoke(context.ReadValue<bool>());
         }
 
         public void OnExit(InputAction.CallbackContext context)
         {
-            IsExit = context.ReadValue<bool>();
+            IsExit?.Invoke(context.ReadValue<bool>());
         }
 
 

@@ -40,31 +40,29 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// Allows the player to exit the puzzle, ending their current session.
         /// Hides visual puzzle. Useful for UI action. Unsubscribes dials event.
         /// </summary>
-        void ExitPuzzle();
+        void StopPuzzle();
 
         /// <summary>
-        /// Useful to select dial as per input command.
+        /// Handles player input to move the dial.
         /// </summary>
-        /// <param name="dialIndex">Index of the dial to be selected.</param>
-        void SelectDial(int dialIndex);
-
-        /// <summary>
-        /// Unlocks and opens the puzzle, indicating that it has been successfully solved.
-        /// Saves the puzzle state to unlock. Invokes OnPuzzleUnlocked event.
-        /// </summary>
-        void UnlockPuzzle();
-
+        /// <param name="input">Input vector representing player movement.</param>
+        public void Move(Vector2 input);
+        
         #endregion
 
         #region Properties
-
+        /// <summary>
+        /// Puzzle current status. stop user to start a puzzle if it is already started.
+        /// </summary>
+        bool IsPuzzleStarted { get; set; }
+        
         /// <summary>
         /// Currently selected dial.
         /// </summary>
         int SelectedDial { get; set; }
 
         /// <summary>
-        /// All dials information.
+        /// Puzzle all dials information.
         /// </summary>
         List<IDial> Dials { get; set; }
 
@@ -78,20 +76,15 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         #region Events
 
         /// <summary>
-        /// Triggered when the player successfully unlocks and solves the puzzle.
-        /// </summary>
-        event Action OnPuzzleUnlocked;
-
-        /// <summary>
         /// Triggered when the puzzle is started
         /// </summary>
         event Action OnPuzzleStart;
-        
-        /// <summary>
-        /// Triggered when the puzzle is reset to its initial state, either by player action or automatically.
-        /// </summary>
-        event Action OnPuzzleReset;
 
+        /// <summary>
+        /// Triggered when the puzzle is stop
+        /// </summary>
+        event Action OnPuzzleStop;
+        
         /// <summary>
         /// Event triggered when dial selection changed.
         /// </summary>
