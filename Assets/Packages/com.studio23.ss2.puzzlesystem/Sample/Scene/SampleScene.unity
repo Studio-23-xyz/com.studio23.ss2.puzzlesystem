@@ -1950,14 +1950,16 @@ MonoBehaviour:
   demoPuzzleGameObject: {fileID: 1792901045}
   dialsContainer: {fileID: 2118816042359550663}
   dialPrefab: {fileID: 50996713889604403, guid: 034094f43f827024785b377fd0e3770f, type: 3}
+  openPuzzleButton: {fileID: 1163479944}
   startPuzzleButton: {fileID: 1315507649}
   exitPuzzleButton: {fileID: 767172895}
-  openPuzzleButton: {fileID: 1163479944}
   puzzleNotification: {fileID: 1760293495}
   puzzleInputController: {fileID: 5171412682822064356}
   puzzleName: KeyCOmbinationPuzzle
-  resultValue: 01000000020000000300000004000000
-  currentValue: 01000000010000000100000001000000
+  minValue: 0
+  maxValue: 9
+  resultValues: 01000000020000000300000004000000
+  currentValues: 00000000000000000000000000000000
   unselectedColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 0, g: 1, b: 1, a: 1}
   solvedColor: {r: 1, g: 0.427451, b: 0, a: 1}
