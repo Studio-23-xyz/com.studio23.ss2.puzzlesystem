@@ -12,10 +12,10 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         #region Actions
 
         /// <summary>
-        /// Initializes the puzzle with its initial configuration.
-        /// Sets up all dials and parameters.
+        /// Initializes the puzzle with puzzle information. you can use constructor instead of this method.
         /// </summary>
-        void SetupPuzzle();
+        /// <param name="puzzleInfo">Represents information about a puzzle, including its name, min-max value, result values, current values, solved status, hints, and solving time.</param>
+        void SetupPuzzle(PuzzleInfo puzzleInfo);
 
         /// <summary>
         /// Resets the puzzle to its initial state, clearing any progress made by the player.

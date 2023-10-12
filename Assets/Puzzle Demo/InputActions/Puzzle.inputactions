@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Enter",
+                    "name": "Start",
                     "type": "Button",
                     "id": "b27e2008-3727-46db-816e-91af336854a1",
                     "expectedControlType": "Button",
@@ -171,7 +171,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "Enter",
+                    "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -182,7 +182,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Enter",
+                    "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

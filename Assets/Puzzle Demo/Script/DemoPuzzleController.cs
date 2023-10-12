@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using Studio23.SS2.PuzzleSystem;
 using Studio23.SS2.PuzzleSystem.Interface;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
@@ -14,94 +16,148 @@ namespace Studio23.SS2.PuzzleDemo
         [SerializeField] private GameObject demoPuzzleGameObject;
         [SerializeField] private Transform dialsContainer;
         [SerializeField] private GameObject dialPrefab;
+        [SerializeField] private Button openPuzzleButton;
         [SerializeField] private Button startPuzzleButton;
         [SerializeField] private Button exitPuzzleButton;
-        [SerializeField] private GameObject unlockGameObject;
+        
+        [SerializeField] private GameObject puzzleNotification;
         [SerializeField] private PuzzleInputController puzzleInputController;
             
         [Header("Puzzle Info")]
         CombinationPuzzle combinationPuzzle;
         [SerializeField] private string puzzleName;
-        [SerializeField] private List<int> resultValue; //= new List<int>(capacity) {1, 2, 3, 4};
-        [SerializeField] private List<int> currentValue; //= new List<int>(capacity) {0, 0, 0, 0};
+        [SerializeField] private int minValue;
+        [SerializeField] private int maxValue;
+        [SerializeField] private List<int> resultValues; //= new List<int>(capacity) {1, 2, 3, 4};
+        [SerializeField] private List<int> currentValues; //= new List<int>(capacity) {0, 0, 0, 0};
         
         [Header("Color Info")]
         [SerializeField] private Color unselectedColor;
         [SerializeField] private Color selectedColor;
         [SerializeField] private Color solvedColor;
+       
+        private bool _isPuzzleStarted;
+
         private void Start()
         {
-            SetupDemoPuzzle();
-            SetupPuzzleInput();
-            SetupPuzzleVisual();
-
+            puzzleInputController.OnOpenAction += Open;
         }
 
+        public void Open(bool obj)
+        {
+            if (obj && !_isPuzzleStarted)
+            {
+                _isPuzzleStarted = true;
+                InitPuzzle();
+            }
+        }
+
+        private void InitPuzzle()
+        {
+            SetupDemoPuzzle();
+            SubscribeInputSystem();
+            SetupPuzzleVisual(true);
+            // combinationPuzzle.StartPuzzle();
+        }
         private void SetupDemoPuzzle()
         {
+          /*puzzleName = "Demo Puzzle";
+          resultValues = new List<int>(4) {1, 2, 3, 4};
+          currentValues = new List<int>(4) {0, 0, 0, 0};*/
+        
             var puzzleInfo = new PuzzleInfo(
                 puzzleName, 
-                resultValue, 
-                currentValue,
+                minValue,
+                maxValue,
+                resultValues, 
+                currentValues,
                 false, 
-                new List<PuzzleHints>(), 
-                0);
+                new List<PuzzleHints>() 
+                );
             
             
             combinationPuzzle = new CombinationPuzzle(puzzleInfo);
            
+            // All events have to subscribe before start puzzle
             combinationPuzzle.OnSelectedDialChanged += OnSelectedDialChanged;
             combinationPuzzle.OnDialValueChanged += OnDialValueChanged;
-            combinationPuzzle.PuzzleInfo.OnPuzzleUnlocked += OnPuzzleUnlocked;
-           
+            combinationPuzzle.OnPuzzleUnlocked += OnPuzzleUnlocked;
             combinationPuzzle.OnPuzzleStart += OnPuzzleStart;
             combinationPuzzle.OnPuzzleStop += OnPuzzleStop;
         }
-        private void SetupPuzzleVisual()
+        private void SetupPuzzleVisual(bool status)
         {
+            demoPuzzleGameObject.SetActive(status);
+            openPuzzleButton.gameObject.SetActive(!status);
+            startPuzzleButton.gameObject.SetActive(status);
+            exitPuzzleButton.gameObject.SetActive(!status);
             
-            demoPuzzleGameObject.SetActive(true);
+           
         }
-        private void SetupPuzzleInput()
+
+        #region Input Proccessing
+
+        private void SubscribeInputSystem()
         {
             puzzleInputController.OnMoveAction += Move;
-            puzzleInputController.OnEnterAction += StartPuzzle;
+            puzzleInputController.OnStartAction += StartPuzzle;
             puzzleInputController.OnExitAction += StopPuzzle;
         }
 
+        public void StartPuzzle(bool obj)
+        {
+            if(obj)combinationPuzzle.StartPuzzle();
+           
+        }
         private void Move(Vector2 obj)
         {
             if(obj.sqrMagnitude >= 1)combinationPuzzle.Move(obj);
         }
-
-        private void StartPuzzle(bool obj)
+        public void StopPuzzle(bool obj)
         {
-            if(obj)combinationPuzzle.StartPuzzle();
+            if (obj) combinationPuzzle.StopPuzzle();
+            
         }
 
-        private void StopPuzzle(bool obj)
-        {
-            if(obj)combinationPuzzle.StopPuzzle();
-        }
+        #endregion
+
+        #region Callbacks
 
         private void OnPuzzleStart()
         {
-            /*foreach (Transform child in dialsContainer)
-            {
-                Destroy(child.gameObject);
-            }*/
-            for (int i = 0; i < currentValue.Count; i++)
+            
+            for (int i = 0; i < currentValues.Count; i++)
             {
                 var dial = Instantiate(dialPrefab, dialsContainer);
-                dial.GetComponentInChildren<TextMeshProUGUI>().text = currentValue[i].ToString();
+                dial.GetComponentInChildren<TextMeshProUGUI>().text = currentValues[i].ToString();
                 dial.GetComponent<Image>().color = unselectedColor;
             }
             exitPuzzleButton.gameObject.SetActive(true);
             startPuzzleButton.gameObject.SetActive(false);
+            puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Started!";
         }
         private void OnPuzzleStop()
         {
-            throw new System.NotImplementedException();
+            foreach (Transform item in dialsContainer.transform)
+            {
+                Destroy(item.gameObject);
+            }
+            
+            puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Stop!";
+            SetupPuzzleVisual(false);
+            
+            // All events unsubscribe before exit puzzle
+            combinationPuzzle.OnSelectedDialChanged -= OnSelectedDialChanged;
+            combinationPuzzle.OnDialValueChanged -= OnDialValueChanged;
+            combinationPuzzle.OnPuzzleUnlocked -= OnPuzzleUnlocked;
+            combinationPuzzle.OnPuzzleStart -= OnPuzzleStart;
+            combinationPuzzle.OnPuzzleStop -= OnPuzzleStop;
+            
+            puzzleInputController.OnMoveAction -= Move;
+            puzzleInputController.OnStartAction -= StartPuzzle;
+            puzzleInputController.OnExitAction -= StopPuzzle;
+
+            _isPuzzleStarted = false;
         }
         private void OnSelectedDialChanged(int obj)
         {
@@ -118,12 +174,15 @@ namespace Studio23.SS2.PuzzleDemo
 
         private void OnPuzzleUnlocked()
         {
-            unlockGameObject.SetActive(true);
+            puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Solved!";
+            puzzleNotification.SetActive(true);
             for (int i = 0; i < dialsContainer.childCount; i++)
             {
                 dialsContainer.GetChild(i).GetComponent<Image>().color = solvedColor;
             }
         }
+
+        #endregion
 
         
 

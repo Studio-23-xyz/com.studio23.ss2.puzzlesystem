@@ -31,14 +31,27 @@ namespace Studio23.SS2.PuzzleSystem
         public string PuzzleName { get; set; }
 
         /// <summary>
-        /// Gets or sets the list of correct values for the puzzle.
+        /// Gets or sets the minimum values of the puzzle dials.
         /// </summary>
-        public List<int> ResultValues { get; set; }
-
+        public int MinValue { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the maximum values of the puzzle dials.
+        /// </summary>
+        public int MaxValue { get; set; }
+        
         /// <summary>
         /// Gets or sets the list of current values of the puzzle dials.
         /// </summary>
         public List<int> CurrentValues { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the list of correct values for the puzzle.
+        /// </summary>
+        public List<int> ResultValues { get; set; }
+        
+        
+        
 
         /// <summary>
         /// Gets or sets a value indicating whether the puzzle is solved.
@@ -48,29 +61,45 @@ namespace Studio23.SS2.PuzzleSystem
         /// <summary>
         /// Event invoked when the puzzle is unlocked.
         /// </summary>
-        public Action OnPuzzleUnlocked;
-
+        public Action OnPuzzleSolved;
+        
         /// <summary>
         /// Gets or sets the list of hints for the puzzle.
         /// </summary>
         public List<PuzzleHints> PuzzleHints { get; set; }
 
         /// <summary>
-        /// Gets or sets the time taken to solve the puzzle.
+        /// Gets the time puzzle has been elapsed in seconds.
         /// </summary>
-        public float PuzzleTime { get; set; }
-
+        public float PuzzleTime
+        {
+            get
+            {
+                // Calculate the elapsed time since the puzzle was initialized
+                TimeSpan elapsed = DateTime.Now - StartTime;
+                return (float)elapsed.TotalSeconds;
+            }
+        }
+        /// <summary>
+        /// Gets or sets the start time when the puzzle is initialized.
+        /// </summary>
+        public DateTime StartTime { get; private set; }
+        
         /// <summary>
         /// Initializes a new instance of the PuzzleInfo class with the specified properties.
         /// </summary>
-        public PuzzleInfo(string puzzleName, List<int> resultValues, List<int> currentValues, bool isPuzzleSolved, List<PuzzleHints> puzzleHints, float puzzleTime)
+        public PuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, bool isPuzzleSolved, List<PuzzleHints> puzzleHints)
         {
             PuzzleName = puzzleName;
+            MinValue = minValue;
+            MaxValue = maxValue;
             ResultValues = resultValues;
             CurrentValues = currentValues;
             IsPuzzleSolved = isPuzzleSolved;
             PuzzleHints = puzzleHints;
-            PuzzleTime = puzzleTime;
+            
+            // Save the current time as the start time
+            StartTime = DateTime.Now;
         }
 
         /// <summary>
@@ -104,7 +133,7 @@ namespace Studio23.SS2.PuzzleSystem
         /// <summary>
         /// Verifies whether the current combination of dial values matches the correct solution (ResultValues).
         /// </summary>
-        private void CheckPuzzleStatus()
+        public void CheckPuzzleStatus()
         {
             bool isPuzzleSolved = true;
             for (int i = 0; i < ResultValues.Count; i++)
@@ -121,7 +150,8 @@ namespace Studio23.SS2.PuzzleSystem
             // If the puzzle is solved, invoke the OnPuzzleSolved event
             if (IsPuzzleSolved)
             {
-                OnPuzzleUnlocked.Invoke();
+                OnPuzzleSolved.Invoke();
+                
             }
         }
     }

@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
@@ -19,47 +18,66 @@ namespace Studio23.SS2.PuzzleSystem
             }
         }
 
-       
-
-       public bool IsPuzzleStarted { get; set; }
+       private bool isPuzzleStarted;
+       public bool IsPuzzleStarted
+       {
+           get { return isPuzzleStarted;}
+           set
+           {
+               if(isPuzzleStarted != value)
+               {
+                   isPuzzleStarted = value;
+                   if(isPuzzleStarted)
+                   {
+                       OnPuzzleStart?.Invoke();
+                   }
+                   else
+                   {
+                       OnPuzzleStop?.Invoke();
+                   }
+               }
+           }
+       }
         public IDial[] Dials { get; set; }
         public PuzzleInfo PuzzleInfo { get; set; }
         public event Action OnPuzzleStart;
         public event Action OnPuzzleStop;
         public event Action<int> OnSelectedDialChanged;
         public event Action<DialInfo> OnDialValueChanged;
+        
+        public Action OnPuzzleUnlocked;
+        
+        private int capacity;
+       
+        public CombinationPuzzle(PuzzleInfo puzzleInfo)=>SetupPuzzle(puzzleInfo);
 
-        public CombinationPuzzle(PuzzleInfo puzzleInfo)
+        public void SetupPuzzle(PuzzleInfo puzzleInfo)
         {
-            // todo: Initialize Puzzle Info
-            if (puzzleInfo.ResultValues.Capacity == puzzleInfo.CurrentValues.Capacity)
+            if (!puzzleInfo.Validate())
             {
-                PuzzleInfo = puzzleInfo;
-                
-                SetupPuzzle();
+                Debug.LogError("ERROR : Puzzle Info is not valid!");
+                return;
             }
-            else
-            {
-                Debug.LogError("ResultValues and CurrentValues Capacity are not same");
-            }
-        }
-
-        public void SetupPuzzle()
-        { 
+            
+            PuzzleInfo = puzzleInfo;
+            capacity = PuzzleInfo.ResultValues.Capacity;
+            PuzzleInfo.OnPuzzleSolved += OnPuzzleSolved;
             //  Initialize/Setup each Dials
-            var capacity = PuzzleInfo.ResultValues.Count;
             Dials = new IDial[capacity];
             
             for (int i = 0; i < capacity; i++)
             {
-                DialInfo dialInfo = new DialInfo(i, PuzzleInfo.CurrentValues[i], 0, 9);
+                DialInfo dialInfo = new DialInfo(i, PuzzleInfo.CurrentValues[i], PuzzleInfo.MinValue, PuzzleInfo.MaxValue);
                 var newDial = new DialController(dialInfo);
                 Dials[i] = newDial;
                
                 Dials[i].DialInfo.OnValueChanged += DialValueChanged;
             }
-            
-            
+        }
+
+        private void OnPuzzleSolved()
+        {
+            OnPuzzleUnlocked?.Invoke();
         }
 
         private void DialValueChanged(DialInfo obj)
@@ -79,19 +97,19 @@ namespace Studio23.SS2.PuzzleSystem
         {
             if(!IsPuzzleStarted)
             {
-                IsPuzzleStarted = true;
-                OnPuzzleStart?.Invoke();  // Invoke OnPuzzleStart 
-                SelectedDial = 0; // Dials Index Id
+                IsPuzzleStarted = true;// Invoke OnPuzzleStart 
+                SelectedDial = 0; // Fire OnSelectedDialChanged
+                PuzzleInfo.CheckPuzzleStatus(); // check if puzzle is solved
             }
             else
             {
-                Debug.LogError("Puzzle is already started");
+                Debug.Log("Puzzle is already started");
             }
         }
         public void Move(Vector2 input)
         {
            if(!IsPuzzleStarted) return;
-           Debug.Log($"input : {input}");
+           // Debug.Log($"input : {input}");
            if(input.y > 0)
            {
                Dials[SelectedDial].AdjustValue(1);
@@ -123,18 +141,27 @@ namespace Studio23.SS2.PuzzleSystem
         {
             // todo: Hide Puzzle Visuals
             // todo: Unsubscribe to Dials Event
-            if(!IsPuzzleStarted) return;
-           
+            
+            if(!IsPuzzleStarted) return; 
+            
+            
            for (int i = 0; i < Dials.Length; i++)
            {
                Dials[i].DialInfo.OnValueChanged -= OnDialValueChanged;
            }
           
            Dials = null;
+           
+           PuzzleInfo.OnPuzzleSolved -= OnPuzzleSolved;
            PuzzleInfo = null;
-           IsPuzzleStarted = false;
-           OnPuzzleStop?.Invoke();
+           
+           IsPuzzleStarted = false; // invoke OnPuzzleStop
+           
         }
+        
+        
+      
+        
     }
 
 }
