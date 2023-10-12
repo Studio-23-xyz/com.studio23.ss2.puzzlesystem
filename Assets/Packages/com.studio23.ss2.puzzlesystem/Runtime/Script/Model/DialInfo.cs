@@ -50,9 +50,9 @@ namespace Studio23.SS2.PuzzleSystem
         public event Action<DialInfo> OnValueChanged;
        
         /// <summary>
-        /// Adjusts the value of the dial by the specified amount. This method fire OnValueChanged event.
+        /// Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">The amount by which the dial value will be adjusted.</param>
         public void AdjustValue(int value)
         {
           int newValue =  CurrentValue + value;

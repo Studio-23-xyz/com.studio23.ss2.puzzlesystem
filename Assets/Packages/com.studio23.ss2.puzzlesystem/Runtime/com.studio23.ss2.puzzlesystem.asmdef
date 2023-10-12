@@ -1,9 +1,7 @@
 {
     "name": "com.studio23.ss2.puzzlesystem",
     "rootNamespace": "",
-    "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

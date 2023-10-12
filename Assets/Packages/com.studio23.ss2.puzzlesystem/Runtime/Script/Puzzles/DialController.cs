@@ -13,14 +13,14 @@ namespace Studio23.SS2.PuzzleSystem
         
         public DialController(DialInfo dialInfo)
         {
-            // todo: Initialize Dial Info
+            // Initialize Dial Info
             DialInfo = dialInfo;
         }
         
         public void AdjustValue(int value)
         {
-            // todo: call AdjustValue
-            // todo: Invoke OnValueChanged
+            //  Call AdjustValue
+            //  Invoke OnValueChanged
             DialInfo.AdjustValue(value);
             
            
