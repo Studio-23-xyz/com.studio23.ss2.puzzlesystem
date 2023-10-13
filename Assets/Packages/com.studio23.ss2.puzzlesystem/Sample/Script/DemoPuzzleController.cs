@@ -1,14 +1,19 @@
+/*
+ * DemoPuzzleController Class:
+ * This class manages the behavior and interaction of a demo puzzle in the game.
+ */
+
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Studio23.SS2.PuzzleSystem;
-using Studio23.SS2.PuzzleSystem.Interface;
 
 namespace Studio23.SS2.PuzzleDemo
 {
     public class DemoPuzzleController : MonoBehaviour
     {
+        // Serialized Fields
         [Header("Serialized Fields")]
         [SerializeField] private GameObject demoPuzzleGameObject;
         [SerializeField] private Transform dialsContainer;
@@ -32,11 +37,13 @@ namespace Studio23.SS2.PuzzleDemo
         private CombinationPuzzle combinationPuzzle;
         private bool isPuzzleStarted;
 
+        // Called when the script starts
         private void Start()
         {
             puzzleInputController.OnOpenAction += Open;
         }
 
+        // Opens the puzzle if requested and not already started
         private void Open(bool obj)
         {
             if (obj && !isPuzzleStarted)
@@ -46,6 +53,7 @@ namespace Studio23.SS2.PuzzleDemo
             }
         }
 
+        // Initializes the puzzle
         private void InitPuzzle()
         {
             SetupDemoPuzzle();
@@ -53,6 +61,7 @@ namespace Studio23.SS2.PuzzleDemo
             SetupPuzzleVisual(true);
         }
 
+        // Sets up the demo puzzle with provided parameters
         private void SetupDemoPuzzle()
         {
             var puzzleInfo = new PuzzleInfo(puzzleName, minValue, maxValue, resultValues, currentValues, false, new List<PuzzleHints>());
@@ -65,6 +74,7 @@ namespace Studio23.SS2.PuzzleDemo
             combinationPuzzle.OnPuzzleStop += OnPuzzleStop;
         }
 
+        // Sets the visibility of puzzle visuals
         private void SetupPuzzleVisual(bool status)
         {
             demoPuzzleGameObject.SetActive(status);
@@ -73,6 +83,7 @@ namespace Studio23.SS2.PuzzleDemo
             exitPuzzleButton.gameObject.SetActive(!status);
         }
 
+        // Subscribes to input system events
         private void SubscribeInputSystem()
         {
             puzzleInputController.OnMoveAction += Move;
@@ -80,21 +91,25 @@ namespace Studio23.SS2.PuzzleDemo
             puzzleInputController.OnExitAction += StopPuzzle;
         }
 
+        // Starts the puzzle if requested
         private void StartPuzzle(bool obj)
         {
             if (obj) combinationPuzzle.StartPuzzle();
         }
 
+        // Moves the dials based on input
         private void Move(Vector2 obj)
         {
             if (obj.sqrMagnitude >= 1) combinationPuzzle.Move(obj);
         }
 
+        // Stops the puzzle if requested
         private void StopPuzzle(bool obj)
         {
             if (obj) combinationPuzzle.StopPuzzle();
         }
 
+        // Called when the puzzle starts
         private void OnPuzzleStart()
         {
             for (int i = 0; i < currentValues.Count; i++)
@@ -108,6 +123,7 @@ namespace Studio23.SS2.PuzzleDemo
             puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Started!";
         }
 
+        // Called when the puzzle stops
         private void OnPuzzleStop()
         {
             foreach (Transform item in dialsContainer.transform)
@@ -121,6 +137,7 @@ namespace Studio23.SS2.PuzzleDemo
             isPuzzleStarted = false;
         }
 
+        // Unsubscribes from events
         private void UnsubscribeEvents()
         {
             combinationPuzzle.OnSelectedDialChanged -= OnSelectedDialChanged;
@@ -134,6 +151,7 @@ namespace Studio23.SS2.PuzzleDemo
             puzzleInputController.OnExitAction -= StopPuzzle;
         }
 
+        // Called when the selected dial changes
         private void OnSelectedDialChanged(int obj)
         {
             for (int i = 0; i < dialsContainer.childCount; i++)
@@ -142,11 +160,13 @@ namespace Studio23.SS2.PuzzleDemo
             }
         }
 
+        // Called when the value of a dial changes
         private void OnDialValueChanged(DialInfo obj)
         {
             dialsContainer.GetChild(obj.IndexID).GetComponentInChildren<TextMeshProUGUI>().text = obj.CurrentValue.ToString();
         }
 
+        // Called when the puzzle is successfully unlocked
         private void OnPuzzleUnlocked()
         {
             puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Unlocked!";

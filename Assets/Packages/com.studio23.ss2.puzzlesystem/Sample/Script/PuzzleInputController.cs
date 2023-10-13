@@ -10,14 +10,11 @@ namespace Studio23.SS2.PuzzleDemo
     {
         
         public bool IsOpen;
-        
         public Vector2 Move;
         public bool IsStart;
         public bool IsExit;
-       
-
-        public event Action<bool> OnOpenAction;
         
+        public event Action<bool> OnOpenAction;
         public event Action<Vector2> OnMoveAction;
         public event Action<bool> OnStartAction;
         public event Action<bool> OnExitAction;
@@ -40,8 +37,6 @@ namespace Studio23.SS2.PuzzleDemo
                 Move = Vector2.zero;
             //    Debug.Log( "Move InputActionPhase.Canceled: " + Move);
             }
-           
-            
         }
 
         public void OnStart(InputAction.CallbackContext context)
