@@ -17,9 +17,11 @@ namespace Studio23.SS2.PuzzleSystem.Data
         public DialInfo(int indexID, int currentValue, int minValue, int maxValue)
         {
             IndexID = indexID;
-            CurrentValue = currentValue;
             MinValue = minValue;
             MaxValue = maxValue;
+            int value = currentValue > maxValue ? maxValue : currentValue < minValue ? minValue : currentValue;
+            CurrentValue = value;
+           
         }
 
         /// <summary>

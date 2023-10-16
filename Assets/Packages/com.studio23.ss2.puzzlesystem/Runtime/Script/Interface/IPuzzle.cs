@@ -47,6 +47,12 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// </summary>
         /// <param name="input">Input vector representing player movement.</param>
         public void Move(Vector2 input);
+       
+        /// <summary>
+        /// Handles player input to move the dial.
+        /// </summary>
+        /// <param name="input">Input vector representing player movement.</param>
+        public void Move(Direction input);
         
         #endregion
 
