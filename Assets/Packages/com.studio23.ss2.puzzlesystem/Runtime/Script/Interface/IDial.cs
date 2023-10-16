@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Studio23.SS2.PuzzleSystem.Data;
 
 namespace Studio23.SS2.PuzzleSystem.Interface
 {

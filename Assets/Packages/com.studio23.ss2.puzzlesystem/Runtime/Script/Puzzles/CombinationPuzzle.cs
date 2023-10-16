@@ -1,9 +1,9 @@
 using System;
-using System.Collections.Generic;
+using Studio23.SS2.PuzzleSystem.Data;
 using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class CombinationPuzzle : IPuzzle
     { 

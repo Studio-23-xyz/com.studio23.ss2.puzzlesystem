@@ -7,7 +7,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Studio23.SS2.PuzzleSystem;
+using Studio23.SS2.PuzzleSystem.Core;
+using Studio23.SS2.PuzzleSystem.Data;
 
 namespace Studio23.SS2.PuzzleDemo
 {

@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Data
 {
     /// <summary>
     /// Represents information about a dial, including its unique identifier, current value, minimum value, and maximum value.

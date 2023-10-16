@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Data
 {
     /// <summary>
     /// Represents a hint for the puzzle, containing a message and a symbol.

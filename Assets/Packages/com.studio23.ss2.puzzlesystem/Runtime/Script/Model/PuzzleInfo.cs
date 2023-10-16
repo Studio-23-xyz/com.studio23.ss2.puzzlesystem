@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Data
 {
     /// <summary>
     /// Represents information about a puzzle, including its name, result values, current values, solved status, hints, and solving time.
