@@ -7,7 +7,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Studio23.SS2.PuzzleSystem;
+using Studio23.SS2.PuzzleSystem.Core;
+using Studio23.SS2.PuzzleSystem.Data;
 
 namespace Studio23.SS2.PuzzleDemo
 {
@@ -64,7 +65,7 @@ namespace Studio23.SS2.PuzzleDemo
         // Sets up the demo puzzle with provided parameters
         private void SetupDemoPuzzle()
         {
-            var puzzleInfo = new PuzzleInfo(puzzleName, minValue, maxValue, resultValues, currentValues, false, new List<PuzzleHints>());
+            var puzzleInfo = new PuzzleInfo(puzzleName, minValue, maxValue, resultValues, currentValues,  new List<PuzzleHints>());
             combinationPuzzle = new CombinationPuzzle(puzzleInfo);
 
             combinationPuzzle.OnSelectedDialChanged += OnSelectedDialChanged;
@@ -92,21 +93,22 @@ namespace Studio23.SS2.PuzzleDemo
         }
 
         // Starts the puzzle if requested
-        private void StartPuzzle(bool obj)
+        private void StartPuzzle(bool isStarted)
         {
-            if (obj) combinationPuzzle.StartPuzzle();
+            if (isStarted) combinationPuzzle.StartPuzzle();
         }
 
         // Moves the dials based on input
-        private void Move(Vector2 obj)
+        private void Move(Vector2 input)
         {
-            if (obj.sqrMagnitude >= 1) combinationPuzzle.Move(obj);
+           // if (input.sqrMagnitude >= 1) combinationPuzzle.Move(input);
+           if (input.sqrMagnitude >= 1) combinationPuzzle.Move(input.GetDirection());
         }
 
         // Stops the puzzle if requested
-        private void StopPuzzle(bool obj)
+        private void StopPuzzle(bool isStopped)
         {
-            if (obj) combinationPuzzle.StopPuzzle();
+            if (isStopped) combinationPuzzle.StopPuzzle();
         }
 
         // Called when the puzzle starts
@@ -137,20 +139,6 @@ namespace Studio23.SS2.PuzzleDemo
             isPuzzleStarted = false;
         }
 
-        // Unsubscribes from events
-        private void UnsubscribeEvents()
-        {
-            combinationPuzzle.OnSelectedDialChanged -= OnSelectedDialChanged;
-            combinationPuzzle.OnDialValueChanged -= OnDialValueChanged;
-            combinationPuzzle.OnPuzzleUnlocked -= OnPuzzleUnlocked;
-            combinationPuzzle.OnPuzzleStart -= OnPuzzleStart;
-            combinationPuzzle.OnPuzzleStop -= OnPuzzleStop;
-
-            puzzleInputController.OnMoveAction -= Move;
-            puzzleInputController.OnStartAction -= StartPuzzle;
-            puzzleInputController.OnExitAction -= StopPuzzle;
-        }
-
         // Called when the selected dial changes
         private void OnSelectedDialChanged(int obj)
         {
@@ -175,6 +163,19 @@ namespace Studio23.SS2.PuzzleDemo
             {
                 dialsContainer.GetChild(i).GetComponent<Image>().color = solvedColor;
             }
+        }
+        // Unsubscribes from events
+        private void UnsubscribeEvents()
+        {
+            combinationPuzzle.OnSelectedDialChanged -= OnSelectedDialChanged;
+            combinationPuzzle.OnDialValueChanged -= OnDialValueChanged;
+            combinationPuzzle.OnPuzzleUnlocked -= OnPuzzleUnlocked;
+            combinationPuzzle.OnPuzzleStart -= OnPuzzleStart;
+            combinationPuzzle.OnPuzzleStop -= OnPuzzleStop;
+
+            puzzleInputController.OnMoveAction -= Move;
+            puzzleInputController.OnStartAction -= StartPuzzle;
+            puzzleInputController.OnExitAction -= StopPuzzle;
         }
     }
 }

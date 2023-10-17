@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
-using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Data
 {
     /// <summary>
     /// Represents information about a dial, including its unique identifier, current value, minimum value, and maximum value.
@@ -19,9 +17,11 @@ namespace Studio23.SS2.PuzzleSystem
         public DialInfo(int indexID, int currentValue, int minValue, int maxValue)
         {
             IndexID = indexID;
-            CurrentValue = currentValue;
             MinValue = minValue;
             MaxValue = maxValue;
+            int value = currentValue > maxValue ? maxValue : currentValue < minValue ? minValue : currentValue;
+            CurrentValue = value;
+           
         }
 
         /// <summary>

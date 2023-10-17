@@ -1,11 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Studio23.SS2.PuzzleSystem.Data;
 using Studio23.SS2.PuzzleSystem.Interface;
-using UnityEngine;
-using Vector2 = System.Numerics.Vector2;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class DialController : IDial
     {

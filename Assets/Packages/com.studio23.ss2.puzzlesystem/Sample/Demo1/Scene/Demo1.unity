@@ -1959,7 +1959,7 @@ MonoBehaviour:
   minValue: 0
   maxValue: 9
   resultValues: 01000000020000000300000004000000
-  currentValues: 00000000000000000000000000000000
+  currentValues: 01000000020000000300000000000000
   unselectedColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 0, g: 1, b: 1, a: 1}
   solvedColor: {r: 1, g: 0.427451, b: 0, a: 1}

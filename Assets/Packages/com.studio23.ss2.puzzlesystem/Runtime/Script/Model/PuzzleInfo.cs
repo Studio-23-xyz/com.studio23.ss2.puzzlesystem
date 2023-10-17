@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+namespace Studio23.SS2.PuzzleSystem.Data
 {
     /// <summary>
     /// Represents information about a puzzle, including its name, result values, current values, solved status, hints, and solving time.
@@ -35,17 +35,29 @@ namespace Studio23.SS2.PuzzleSystem
         public List<int> ResultValues { get; set; }
         
         
-        
 
         /// <summary>
         /// Gets or sets a value indicating whether the puzzle is solved.
         /// </summary>
-        public bool IsPuzzleSolved { get; set; }
+        public bool IsPuzzleSolved  {
+            get
+            {
+                var isPuzzleUnlock = true;
+                for (int i = 0; i < ResultValues.Count; i++)
+                {
+                    if (ResultValues[i] != CurrentValues[i])
+                    {
+                        isPuzzleUnlock = false;
+                        break;
+                    }
+                }
 
-        /// <summary>
-        /// Event invoked when the puzzle is unlocked.
-        /// </summary>
-        public Action OnPuzzleSolved;
+                return isPuzzleUnlock;
+            }
+            private set { throw new NotImplementedException(); }
+        }
+
+       
         
         /// <summary>
         /// Gets or sets the list of hints for the puzzle.
@@ -72,16 +84,14 @@ namespace Studio23.SS2.PuzzleSystem
         /// <summary>
         /// Initializes a new instance of the PuzzleInfo class with the specified properties.
         /// </summary>
-        public PuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, bool isPuzzleSolved, List<PuzzleHints> puzzleHints)
+        public PuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, List<PuzzleHints> puzzleHints)
         {
             PuzzleName = puzzleName;
             MinValue = minValue;
             MaxValue = maxValue;
             ResultValues = resultValues;
             CurrentValues = currentValues;
-            IsPuzzleSolved = isPuzzleSolved;
             PuzzleHints = puzzleHints;
-            
             // Save the current time as the start time
             StartTime = DateTime.Now;
         }
@@ -92,8 +102,10 @@ namespace Studio23.SS2.PuzzleSystem
         /// <param name="newCurrentValues">The new values for the puzzle dials.</param>
         public void SetCurrentValues(List<int> newCurrentValues)
         {
-            CurrentValues = newCurrentValues;
-            CheckPuzzleStatus();
+            for (int i = 0; i < newCurrentValues.Count; i++)
+            {
+                SetCurrentValues(i, newCurrentValues[i]);
+            }
         }
 
         /// <summary>
@@ -103,40 +115,18 @@ namespace Studio23.SS2.PuzzleSystem
         /// <param name="newCurrentValue">The new value for the currentValue item</param>
         public void SetCurrentValues(int index, int newCurrentValue)
         {
+            // Modified the newCurrentValue to be in range of MinValue and MaxValue
+            newCurrentValue = (newCurrentValue > MaxValue) ? MinValue : (newCurrentValue < MinValue) ? MaxValue : newCurrentValue;
+            
             if (index >= 0 && index < CurrentValues.Count)
             {
                 CurrentValues[index] = newCurrentValue;
-                CheckPuzzleStatus();
             }
             else
             {
-                Debug.LogError("Index out of range");
+                Debug.LogError($"{index} Index out of range");
             }
         }
-
-        /// <summary>
-        /// Verifies whether the current combination of dial values matches the correct solution (ResultValues).
-        /// </summary>
-        public void CheckPuzzleStatus()
-        {
-            bool isPuzzleSolved = true;
-            for (int i = 0; i < ResultValues.Count; i++)
-            {
-                if (ResultValues[i] != CurrentValues[i])
-                {
-                    isPuzzleSolved = false;
-                    break;
-                }
-            }
-
-            IsPuzzleSolved = isPuzzleSolved;
-
-            // If the puzzle is solved, invoke the OnPuzzleSolved event
-            if (IsPuzzleSolved)
-            {
-                OnPuzzleSolved.Invoke();
-                
-            }
-        }
+ 
     }
 }
