@@ -102,7 +102,10 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <param name="newCurrentValues">The new values for the puzzle dials.</param>
         public void SetCurrentValues(List<int> newCurrentValues)
         {
-            CurrentValues = newCurrentValues;
+            for (int i = 0; i < newCurrentValues.Count; i++)
+            {
+                SetCurrentValues(i, newCurrentValues[i]);
+            }
         }
 
         /// <summary>
@@ -112,13 +115,16 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <param name="newCurrentValue">The new value for the currentValue item</param>
         public void SetCurrentValues(int index, int newCurrentValue)
         {
+            // Modified the newCurrentValue to be in range of MinValue and MaxValue
+            newCurrentValue = (newCurrentValue > MaxValue) ? MinValue : (newCurrentValue < MinValue) ? MaxValue : newCurrentValue;
+            
             if (index >= 0 && index < CurrentValues.Count)
             {
                 CurrentValues[index] = newCurrentValue;
             }
             else
             {
-                Debug.LogError("Index out of range");
+                Debug.LogError($"{index} Index out of range");
             }
         }
  
