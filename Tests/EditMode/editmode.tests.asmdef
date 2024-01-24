@@ -1,0 +1,20 @@
+{
+  "name": "editmode.tests",
+  "allowUnsafeCode": false,
+  "autoReferenced": false,
+  "overrideReferences": true,
+  "references": [
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner",
+    "com.studio23.ss2.puzzlesystem"
+  ],
+  "optionalUnityReferences": [],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "precompiledReferences": [
+    "nunit.framework.dll"
+  ],
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ]
+}
