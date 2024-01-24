@@ -1955,7 +1955,7 @@ MonoBehaviour:
   _exitPuzzleButton: {fileID: 767172895}
   _puzzleNotification: {fileID: 1760293495}
   _puzzleInputController: {fileID: 5171412682822064356}
-  _puzzleName: X
+  _puzzleName: Demo
   _minValue: 0
   _maxValue: 10
   _resultValues: 0100000002000000030000000400000005000000

@@ -113,7 +113,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
             }
         }
        
-        public void Move(Direction direction)
+        public void AdjustDial(Direction direction)
         {
             if (!IsPuzzleStarted) 
                 return;
@@ -137,7 +137,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
                     
                     break;
                 default:    
-                   Debug.Log($"Move Error! : {direction}");
+                   Debug.Log($"AdjustDial Error! : {direction}");
                     break;
             }
 
@@ -146,23 +146,23 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
         }
       
-        public void Move(Vector2 input)
+        public void AdjustDial(Vector2 input)
         {
             if(input.y > 0)
             {
-                Move(Direction.Up);
+                AdjustDial(Direction.Up);
             }
             else if(input.y < 0)
             {
-               Move(Direction.Down);
+               AdjustDial(Direction.Down);
             }
             else if(input.x > 0)
             {
-               Move( Direction.Right);
+               AdjustDial( Direction.Right);
             }
             else if(input.x < 0)
             {
-                Move( Direction.Left);
+                AdjustDial( Direction.Left);
             }
         }
         

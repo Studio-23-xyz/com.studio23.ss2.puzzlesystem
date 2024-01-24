@@ -148,13 +148,13 @@ namespace Tests.EditMode
                 CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
                 puzzle.StartPuzzle();
                 
-                puzzle.Move(new Vector2(0,1));
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,-1));
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,1)); 
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,-1)); 
+                puzzle.AdjustDial(new Vector2(0,1));
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,-1));
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,1)); 
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,-1)); 
                 
                 Assert.IsTrue(puzzleInfo.IsPuzzleSolved);
             }
@@ -176,13 +176,13 @@ namespace Tests.EditMode
                 CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
                 puzzle.StartPuzzle();
                 
-                puzzle.Move(new Vector2(0,1));
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,-1));
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,1)); 
-                puzzle.Move(new Vector2(1,0));
-                puzzle.Move(new Vector2(0,-1)); 
+                puzzle.AdjustDial(new Vector2(0,1));
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,-1));
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,1)); 
+                puzzle.AdjustDial(new Vector2(1,0));
+                puzzle.AdjustDial(new Vector2(0,-1)); 
                 
                 Assert.IsTrue(puzzleInfo.IsPuzzleSolved);
             }

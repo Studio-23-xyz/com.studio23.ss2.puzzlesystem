@@ -104,7 +104,7 @@ namespace Studio23.SS2.Sample
         // Moves the dials based on input
         private void Move(Vector2 input)
         {
-            if (input.sqrMagnitude >= 1) _combinationPuzzle.Move(input.GetDirection());
+            if (input.sqrMagnitude >= 1) _combinationPuzzle.AdjustDial(input.GetDirection());
         }
 
         // Stops the puzzle if requested
