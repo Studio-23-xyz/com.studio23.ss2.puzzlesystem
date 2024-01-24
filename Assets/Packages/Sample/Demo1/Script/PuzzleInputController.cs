@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
-namespace Studio23.SS2.PuzzleDemo
+namespace Studio23.SS2.Sample
 {
     public class PuzzleInputController : MonoBehaviour
     {

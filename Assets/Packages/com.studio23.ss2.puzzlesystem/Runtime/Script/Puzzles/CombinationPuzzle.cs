@@ -7,10 +7,10 @@ namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class CombinationPuzzle : IPuzzle
     { 
-        private int selectedDial { get; set; }
+        private int _selectedDial { get; set; }
 
        public int SelectedDial {
-            get => selectedDial;
+            get => _selectedDial;
             set
             {
                 
@@ -20,23 +20,23 @@ namespace Studio23.SS2.PuzzleSystem.Core
                     return;
                 }
                 
-                if (value >= Dials.Length) selectedDial = 0;
-                else if (value < 0) selectedDial = Dials.Length - 1;
-                else selectedDial = value;
-                OnSelectedDialChanged?.Invoke(selectedDial);
+                if (value >= Dials.Length) _selectedDial = 0;
+                else if (value < 0) _selectedDial = Dials.Length - 1;
+                else _selectedDial = value;
+                OnSelectedDialChanged?.Invoke(_selectedDial);
             }
         }
 
-       private bool isPuzzleStarted;
+       private bool _isPuzzleStarted;
        public bool IsPuzzleStarted
        {
-           get { return isPuzzleStarted;}
+           get { return _isPuzzleStarted;}
            set
            {
-               if(isPuzzleStarted != value)
+               if(_isPuzzleStarted != value)
                {
-                   isPuzzleStarted = value;
-                   if(isPuzzleStarted)
+                   _isPuzzleStarted = value;
+                   if(_isPuzzleStarted)
                    {
                        OnPuzzleStart?.Invoke();
                    }
@@ -88,21 +88,18 @@ namespace Studio23.SS2.PuzzleSystem.Core
         private void DialValueChanged(DialInfo dialInfo)
         {
             OnDialValueChanged?.Invoke(dialInfo);
-            PuzzleInfo.SetCurrentValues(dialInfo.IndexID, dialInfo.CurrentValue); //selectedDial = IndexID;
+            PuzzleInfo.SetCurrentValues(dialInfo.IndexID, dialInfo.CurrentValue); //_selectedDial = IndexID;
         }
 
        
 
-        public void ResetPuzzle()
-        {
-            throw new NotImplementedException();
-        }
+        public void ResetPuzzle() => StopPuzzle();
 
         public void StartPuzzle()
         {
             if(!IsPuzzleStarted)
             {
-                IsPuzzleStarted = true;// Invoke OnPuzzleStart 
+                IsPuzzleStarted = true; // Invoke OnPuzzleStart 
                 SelectedDial = 0; // Fire OnSelectedDialChanged
                 
                 if (PuzzleInfo.IsPuzzleSolved)
@@ -176,28 +173,15 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
         public void StopPuzzle()
         {
-            // todo: Hide Puzzle Visuals
-            // todo: Unsubscribe to Dials Event
-            
             if(!IsPuzzleStarted) return; 
-            
-            
            for (int i = 0; i < Dials.Length; i++)
            {
                Dials[i].DialInfo.OnValueChanged -= OnDialValueChanged;
            }
-          
            Dials = null;
-           
-          // PuzzleInfo.OnPuzzleSolved -= OnPuzzleSolved;
            PuzzleInfo = null;
-           
-           IsPuzzleStarted = false; // invoke OnPuzzleStop
+           IsPuzzleStarted = false;  
            
         }
-
-        
-        
     }
-
 }
