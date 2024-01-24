@@ -1,10 +1,13 @@
 using System;
+using System.Runtime.CompilerServices;
 using Studio23.SS2.PuzzleSystem.Data;
 using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
 
+[assembly:  InternalsVisibleTo("editmode.tests")]
 namespace Studio23.SS2.PuzzleSystem.Core
 {
+    
     public class CombinationPuzzle : IPuzzle
     { 
         private int _selectedDial { get; set; }
@@ -30,20 +33,18 @@ namespace Studio23.SS2.PuzzleSystem.Core
        private bool _isPuzzleStarted;
        public bool IsPuzzleStarted
        {
-           get { return _isPuzzleStarted;}
+           get => _isPuzzleStarted;
            set
            {
-               if(_isPuzzleStarted != value)
+               if (_isPuzzleStarted == value) return;
+               _isPuzzleStarted = value;
+               if(_isPuzzleStarted)
                {
-                   _isPuzzleStarted = value;
-                   if(_isPuzzleStarted)
-                   {
-                       OnPuzzleStart?.Invoke();
-                   }
-                   else
-                   {
-                      OnPuzzleStop?.Invoke();
-                   }
+                   OnPuzzleStart?.Invoke();
+               }
+               else
+               {
+                   OnPuzzleStop?.Invoke();
                }
            }
        }

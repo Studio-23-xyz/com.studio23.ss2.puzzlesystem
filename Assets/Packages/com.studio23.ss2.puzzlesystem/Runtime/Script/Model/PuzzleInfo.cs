@@ -33,31 +33,28 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// Gets or sets the list of correct values for the puzzle.
         /// </summary>
         public List<int> ResultValues { get; set; }
-        
-        
+
+
 
         /// <summary>
         /// Gets or sets a value indicating whether the puzzle is solved.
         /// </summary>
-        public bool IsPuzzleSolved  {
-            get
+        public bool IsPuzzleSolved => CheckPuzzleSolved();
+
+        public bool CheckPuzzleSolved()
+        {
+            var isPuzzleUnlock = true;
+            for (int i = 0; i < ResultValues.Count; i++)
             {
-                var isPuzzleUnlock = true;
-                for (int i = 0; i < ResultValues.Count; i++)
+                if (ResultValues[i] != CurrentValues[i])
                 {
-                    if (ResultValues[i] != CurrentValues[i])
-                    {
-                        isPuzzleUnlock = false;
-                        break;
-                    }
+                    isPuzzleUnlock = false;
+                    break;
                 }
-
-                return isPuzzleUnlock;
             }
-            private set { throw new NotImplementedException(); }
-        }
 
-       
+            return isPuzzleUnlock;
+        }
         
         /// <summary>
         /// Gets or sets the list of hints for the puzzle.
