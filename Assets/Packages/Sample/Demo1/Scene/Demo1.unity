@@ -1931,7 +1931,7 @@ MonoBehaviour:
     m_ActionId: 6158ef4d-f217-4868-b82b-13215b385866
     m_ActionName: PuzzleMap/Open[/Keyboard/space,/XInputControllerWindows1/start]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Gamepad
+  m_DefaultControlScheme: KeyboardMouse
   m_DefaultActionMap: PuzzleMap
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -1947,22 +1947,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d8d0691c67fb544a441de70ffe98dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demoPuzzleGameObject: {fileID: 1792901045}
-  dialsContainer: {fileID: 2118816042359550663}
-  dialPrefab: {fileID: 50996713889604403, guid: 034094f43f827024785b377fd0e3770f, type: 3}
-  openPuzzleButton: {fileID: 1163479944}
-  startPuzzleButton: {fileID: 1315507649}
-  exitPuzzleButton: {fileID: 767172895}
-  puzzleNotification: {fileID: 1760293495}
-  puzzleInputController: {fileID: 5171412682822064356}
-  puzzleName: KeyCOmbinationPuzzle
-  minValue: 0
-  maxValue: 9
-  resultValues: 01000000020000000300000004000000
-  currentValues: 00000000000000000000000000000000
-  unselectedColor: {r: 1, g: 1, b: 1, a: 1}
-  selectedColor: {r: 0, g: 1, b: 1, a: 1}
-  solvedColor: {r: 1, g: 0.427451, b: 0, a: 1}
+  _demoPuzzleGameObject: {fileID: 1792901045}
+  _dialsContainer: {fileID: 2118816042359550663}
+  _dialPrefab: {fileID: 50996713889604403, guid: 034094f43f827024785b377fd0e3770f, type: 3}
+  _openPuzzleButton: {fileID: 1163479944}
+  _startPuzzleButton: {fileID: 1315507649}
+  _exitPuzzleButton: {fileID: 767172895}
+  _puzzleNotification: {fileID: 1760293495}
+  _puzzleInputController: {fileID: 5171412682822064356}
+  _puzzleName: Demo
+  _minValue: 0
+  _maxValue: 10
+  _resultValues: 0100000002000000030000000400000005000000
+  _currentValues: 0000000000000000000000000000000000000000
+  _unselectedColor: {r: 0.75137985, g: 1, b: 0.5424528, a: 1}
+  _selectedColor: {r: 1, g: 0.7327648, b: 0, a: 1}
+  _solvedColor: {r: 0.7955483, g: 0.25943398, b: 1, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

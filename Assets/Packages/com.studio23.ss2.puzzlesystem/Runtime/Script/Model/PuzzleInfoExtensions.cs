@@ -1,4 +1,4 @@
-﻿namespace Studio23.SS2.PuzzleSystem
+﻿namespace Studio23.SS2.PuzzleSystem.Data
 {
     public static class PuzzleInfoExtensions
     {

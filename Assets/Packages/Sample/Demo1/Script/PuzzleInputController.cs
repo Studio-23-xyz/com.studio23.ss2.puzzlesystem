@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
-namespace Studio23.SS2.PuzzleDemo
+namespace Studio23.SS2.Sample
 {
     public class PuzzleInputController : MonoBehaviour
     {
@@ -31,11 +29,11 @@ namespace Studio23.SS2.PuzzleDemo
             {
                 Move = context.ReadValue<Vector2>().normalized;
                 OnMoveAction?.Invoke(Move);
-            //    Debug.Log( "Move InputActionPhase.Performed : " + Move);
+            //    Debug.Log( "AdjustDial InputActionPhase.Performed : " + AdjustDial);
             }else if (context.phase == InputActionPhase.Canceled)
             {
                 Move = Vector2.zero;
-            //    Debug.Log( "Move InputActionPhase.Canceled: " + Move);
+            //    Debug.Log( "AdjustDial InputActionPhase.Canceled: " + AdjustDial);
             }
         }
 

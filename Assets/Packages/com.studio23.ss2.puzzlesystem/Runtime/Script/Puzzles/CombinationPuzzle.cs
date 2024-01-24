@@ -1,40 +1,50 @@
 using System;
-using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Studio23.SS2.PuzzleSystem.Data;
 using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
 
-namespace Studio23.SS2.PuzzleSystem
+[assembly:  InternalsVisibleTo("editmode.tests")]
+namespace Studio23.SS2.PuzzleSystem.Core
 {
+    
     public class CombinationPuzzle : IPuzzle
     { 
-        private int selectedDial { get; set; }
+        private int _selectedDial { get; set; }
 
        public int SelectedDial {
-            get => selectedDial;
+            get => _selectedDial;
             set
             {
-                selectedDial = value;
-                OnSelectedDialChanged?.Invoke(selectedDial);
+                
+                if (Dials.Length == 0)
+                {
+                    Debug.LogError($"Dials is empty!");
+                    return;
+                }
+                
+                if (value >= Dials.Length) _selectedDial = 0;
+                else if (value < 0) _selectedDial = Dials.Length - 1;
+                else _selectedDial = value;
+                OnSelectedDialChanged?.Invoke(_selectedDial);
             }
         }
 
-       private bool isPuzzleStarted;
+       private bool _isPuzzleStarted;
        public bool IsPuzzleStarted
        {
-           get { return isPuzzleStarted;}
+           get => _isPuzzleStarted;
            set
            {
-               if(isPuzzleStarted != value)
+               if (_isPuzzleStarted == value) return;
+               _isPuzzleStarted = value;
+               if(_isPuzzleStarted)
                {
-                   isPuzzleStarted = value;
-                   if(isPuzzleStarted)
-                   {
-                       OnPuzzleStart?.Invoke();
-                   }
-                   else
-                   {
-                       OnPuzzleStop?.Invoke();
-                   }
+                   OnPuzzleStart?.Invoke();
+               }
+               else
+               {
+                   OnPuzzleStop?.Invoke();
                }
            }
        }
@@ -47,7 +57,7 @@ namespace Studio23.SS2.PuzzleSystem
         
         public Action OnPuzzleUnlocked;
         
-        private int capacity;
+        private int _count;
        
         public CombinationPuzzle(PuzzleInfo puzzleInfo)=>SetupPuzzle(puzzleInfo);
 
@@ -60,12 +70,13 @@ namespace Studio23.SS2.PuzzleSystem
             }
             
             PuzzleInfo = puzzleInfo;
-            capacity = PuzzleInfo.ResultValues.Capacity;
-            PuzzleInfo.OnPuzzleSolved += OnPuzzleSolved;
-            //  Initialize/Setup each Dials
-            Dials = new IDial[capacity];
+            _count = PuzzleInfo.CurrentValues.Count;
+             
             
-            for (int i = 0; i < capacity; i++)
+            //  Initialize/Setup each Dials
+            Dials = new IDial[_count];
+            
+            for (int i = 0; i < Dials.Length; i++)
             {
                 DialInfo dialInfo = new DialInfo(i, PuzzleInfo.CurrentValues[i], PuzzleInfo.MinValue, PuzzleInfo.MaxValue);
                 var newDial = new DialController(dialInfo);
@@ -74,64 +85,88 @@ namespace Studio23.SS2.PuzzleSystem
                 Dials[i].DialInfo.OnValueChanged += DialValueChanged;
             }
         }
-
-        private void OnPuzzleSolved()
+        
+        private void DialValueChanged(DialInfo dialInfo)
         {
-            OnPuzzleUnlocked?.Invoke();
-        }
-
-        private void DialValueChanged(DialInfo obj)
-        {
-            OnDialValueChanged?.Invoke(obj);
-            PuzzleInfo.SetCurrentValues(obj.IndexID, obj.CurrentValue); //selectedDial = IndexID;
+            OnDialValueChanged?.Invoke(dialInfo);
+            PuzzleInfo.SetCurrentValues(dialInfo.IndexID, dialInfo.CurrentValue); //_selectedDial = IndexID;
         }
 
        
 
-        public void ResetPuzzle()
-        {
-            throw new NotImplementedException();
-        }
+        public void ResetPuzzle() => StopPuzzle();
 
         public void StartPuzzle()
         {
             if(!IsPuzzleStarted)
             {
-                IsPuzzleStarted = true;// Invoke OnPuzzleStart 
+                IsPuzzleStarted = true; // Invoke OnPuzzleStart 
                 SelectedDial = 0; // Fire OnSelectedDialChanged
-                PuzzleInfo.CheckPuzzleStatus(); // check if puzzle is solved
+                
+                if (PuzzleInfo.IsPuzzleSolved)
+                {
+                    OnPuzzleUnlocked.Invoke();
+                }
             }
             else
             {
                 Debug.Log("Puzzle is already started");
             }
         }
-        public void Move(Vector2 input)
+       
+        public void AdjustDial(Direction direction)
         {
-           if(!IsPuzzleStarted) return;
-           // Debug.Log($"input : {input}");
-           if(input.y > 0)
-           {
-               Dials[SelectedDial].AdjustValue(1);
-           }
-           else if(input.y < 0)
-           {
-               Dials[SelectedDial].AdjustValue(-1);
-           }
-          
-           if(input.x > 0)
-           {
-               SelectedDial++;
-               if(SelectedDial >= Dials.Length) SelectedDial = 0;
-               OnSelectedDialChanged?.Invoke(SelectedDial);
-           }
-           else if(input.x < 0)
-           {
-               SelectedDial--;
-               if(SelectedDial < 0) SelectedDial = Dials.Length - 1;
-               OnSelectedDialChanged?.Invoke(SelectedDial);
-           }
+            if (!IsPuzzleStarted) 
+                return;
+            if (PuzzleInfo.IsPuzzleSolved) 
+                return;
+            
+            switch (direction)
+            {
+                case Direction.Up:
+                    Dials[SelectedDial].AdjustValue(1);
+                    break;
+                case Direction.Down:
+                    Dials[SelectedDial].AdjustValue(-1);
+                    break;
+                case Direction.Right:
+                    SelectedDial++;
+                    
+                    break;
+                case Direction.Left:
+                    SelectedDial--;
+                    
+                    break;
+                default:    
+                   Debug.Log($"AdjustDial Error! : {direction}");
+                    break;
+            }
+
+            if (PuzzleInfo.IsPuzzleSolved) 
+                OnPuzzleUnlocked?.Invoke();
+
         }
+      
+        public void AdjustDial(Vector2 input)
+        {
+            if(input.y > 0)
+            {
+                AdjustDial(Direction.Up);
+            }
+            else if(input.y < 0)
+            {
+               AdjustDial(Direction.Down);
+            }
+            else if(input.x > 0)
+            {
+               AdjustDial( Direction.Right);
+            }
+            else if(input.x < 0)
+            {
+                AdjustDial( Direction.Left);
+            }
+        }
+        
         public void ShowHint()
         {
             throw new NotImplementedException();
@@ -139,29 +174,15 @@ namespace Studio23.SS2.PuzzleSystem
 
         public void StopPuzzle()
         {
-            // todo: Hide Puzzle Visuals
-            // todo: Unsubscribe to Dials Event
-            
             if(!IsPuzzleStarted) return; 
-            
-            
            for (int i = 0; i < Dials.Length; i++)
            {
                Dials[i].DialInfo.OnValueChanged -= OnDialValueChanged;
            }
-          
            Dials = null;
-           
-           PuzzleInfo.OnPuzzleSolved -= OnPuzzleSolved;
            PuzzleInfo = null;
-           
-           IsPuzzleStarted = false; // invoke OnPuzzleStop
+           IsPuzzleStarted = false;  
            
         }
-        
-        
-      
-        
     }
-
 }
