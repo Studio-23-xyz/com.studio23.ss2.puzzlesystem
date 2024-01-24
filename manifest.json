@@ -1,0 +1,364 @@
+{
+  "sitemap": {
+    "baseUrl": "https://studio-23-xyz.github.io/com.studio23.ss2.puzzlesystem/"
+  },
+  "source_base_path": "/home/runner/work/com.studio23.ss2.puzzlesystem/com.studio23.ss2.puzzlesystem/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.DOTweenModuleAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.DOTweenModuleAudio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.DOTweenModulePhysics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.DOTweenModulePhysics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.DOTweenModuleUnityVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.DOTweenModuleUnityVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.DOTweenModuleUtils.Physics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.DOTweenModuleUtils.Physics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.DOTweenModuleUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.DOTweenModuleUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DG.Tweening.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DG.Tweening.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.DialController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.DialController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.Vector2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.Vector2Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.DialInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.Direction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleHints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IDial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IDial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Sample.DemoPuzzleController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Sample.DemoPuzzleController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Sample.PuzzleInputController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Sample.PuzzleInputController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Sample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Sample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.EditMode.PuzzleSystemTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.EditMode.PuzzleSystemTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.EditMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.EditMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        },
+        ".html": {
+          "relative_path": "changelog/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "license/toc.json"
+        },
+        ".html": {
+          "relative_path": "license/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
