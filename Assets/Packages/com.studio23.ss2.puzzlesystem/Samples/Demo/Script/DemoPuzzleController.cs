@@ -41,6 +41,8 @@ namespace Studio23.SS2.Sample
         private CombinationPuzzle _combinationPuzzle;
         private bool _isPuzzleStarted;
         
+         
+        
         private void Start()
         {
             _puzzleInputController.OnOpenAction += Open;
