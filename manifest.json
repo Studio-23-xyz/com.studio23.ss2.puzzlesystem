@@ -15,66 +15,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.DOTweenModuleAudio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.DOTweenModuleAudio.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.DOTweenModulePhysics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.DOTweenModulePhysics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.DOTweenModuleUnityVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.DOTweenModuleUnityVersion.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.DOTweenModuleUtils.Physics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.DOTweenModuleUtils.Physics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.DOTweenModuleUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.DOTweenModuleUtils.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DG.Tweening.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DG.Tweening.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.yml",
       "output": {
         ".html": {
