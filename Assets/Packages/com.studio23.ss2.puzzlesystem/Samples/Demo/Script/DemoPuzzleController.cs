@@ -38,10 +38,8 @@ namespace Studio23.SS2.Sample
         [SerializeField] private Color _selectedColor;
         [SerializeField] private Color _solvedColor;
 
-        private CombinationPuzzle _combinationPuzzle;
+        private CombinationDialPuzzle _combinationDialDialPuzzleBase;
         private bool _isPuzzleStarted;
-        
-         
         
         private void Start()
         {
@@ -69,15 +67,15 @@ namespace Studio23.SS2.Sample
         // Sets up the demo puzzle with provided parameters
         private void SetupDemoPuzzle()
         {
-            var puzzleInfo = new PuzzleInfo(_puzzleName, _minValue, _maxValue, _resultValues, _currentValues,
+            var puzzleInfo = new DialPuzzleInfo(_puzzleName, _minValue, _maxValue, _resultValues, _currentValues,
                 new List<PuzzleHints>());
-            _combinationPuzzle = new CombinationPuzzle(puzzleInfo);
+            _combinationDialDialPuzzleBase = new CombinationDialPuzzle(puzzleInfo);
 
-            _combinationPuzzle.OnSelectedDialChanged += OnSelectedDialChanged;
-            _combinationPuzzle.OnDialValueChanged += OnDialValueChanged;
-            _combinationPuzzle.OnPuzzleUnlocked += OnPuzzleUnlocked;
-            _combinationPuzzle.OnPuzzleStart += OnPuzzleStart;
-            _combinationPuzzle.OnPuzzleStop += OnPuzzleStop;
+            _combinationDialDialPuzzleBase.OnSelectedDialChanged += OnSelectedDialDialChanged;
+            _combinationDialDialPuzzleBase.OnDialValueChanged += OnDialDialValueChanged;
+            _combinationDialDialPuzzleBase.OnPuzzleSolved += OnDialPuzzleUnlocked;
+            _combinationDialDialPuzzleBase.OnPuzzleStart += OnDialDialPuzzleBaseStart;
+            _combinationDialDialPuzzleBase.OnPuzzleStop += OnDialDialPuzzleBaseStop;
         }
 
         // Sets the visibility of puzzle visuals
@@ -100,23 +98,23 @@ namespace Studio23.SS2.Sample
         // Starts the puzzle if requested
         private void StartPuzzle(bool isStarted)
         {
-            if (isStarted) _combinationPuzzle.StartPuzzle();
+            if (isStarted) _combinationDialDialPuzzleBase.StartPuzzle();
         }
 
         // Moves the dials based on input
         private void Move(Vector2 input)
         {
-            if (input.sqrMagnitude >= 1) _combinationPuzzle.AdjustDial(input.GetDirection());
+            if (input.sqrMagnitude >= 1) _combinationDialDialPuzzleBase.AdjustDial(input.GetDirection());
         }
 
         // Stops the puzzle if requested
         private void StopPuzzle(bool isStopped)
         {
-            if (isStopped) _combinationPuzzle.StopPuzzle();
+            if (isStopped) _combinationDialDialPuzzleBase.StopPuzzle();
         }
 
         // Called when the puzzle starts
-        private void OnPuzzleStart()
+        private void OnDialDialPuzzleBaseStart()
         {
             for (int i = 0; i < _currentValues.Count; i++)
             {
@@ -131,7 +129,7 @@ namespace Studio23.SS2.Sample
         }
 
         // Called when the puzzle stops
-        private void OnPuzzleStop()
+        private void OnDialDialPuzzleBaseStop()
         {
             foreach (Transform item in _dialsContainer.transform)
             {
@@ -145,7 +143,7 @@ namespace Studio23.SS2.Sample
         }
 
         // Called when the selected dial changes
-        private void OnSelectedDialChanged(int obj)
+        private void OnSelectedDialDialChanged(int obj)
         {
             for (int i = 0; i < _dialsContainer.childCount; i++)
             {
@@ -154,14 +152,14 @@ namespace Studio23.SS2.Sample
         }
 
         // Called when the value of a dial changes
-        private void OnDialValueChanged(DialInfo obj)
+        private void OnDialDialValueChanged(DialInfo obj)
         {
             _dialsContainer.GetChild(obj.IndexID).GetComponentInChildren<TextMeshProUGUI>().text =
                 obj.CurrentValue.ToString();
         }
 
         // Called when the puzzle is successfully unlocked
-        private void OnPuzzleUnlocked()
+        private void OnDialPuzzleUnlocked()
         {
             _puzzleNotification.GetComponentInChildren<TextMeshProUGUI>().text = "Puzzle Unlocked!";
             _puzzleNotification.SetActive(true);
@@ -174,11 +172,11 @@ namespace Studio23.SS2.Sample
         // Unsubscribes from events
         private void UnsubscribeEvents()
         {
-            _combinationPuzzle.OnSelectedDialChanged -= OnSelectedDialChanged;
-            _combinationPuzzle.OnDialValueChanged -= OnDialValueChanged;
-            _combinationPuzzle.OnPuzzleUnlocked -= OnPuzzleUnlocked;
-            _combinationPuzzle.OnPuzzleStart -= OnPuzzleStart;
-            _combinationPuzzle.OnPuzzleStop -= OnPuzzleStop;
+            _combinationDialDialPuzzleBase.OnSelectedDialChanged -= OnSelectedDialDialChanged;
+            _combinationDialDialPuzzleBase.OnDialValueChanged -= OnDialDialValueChanged;
+            _combinationDialDialPuzzleBase.OnPuzzleSolved -= OnDialPuzzleUnlocked;
+            _combinationDialDialPuzzleBase.OnPuzzleStart -= OnDialDialPuzzleBaseStart;
+            _combinationDialDialPuzzleBase.OnPuzzleStop -= OnDialDialPuzzleBaseStop;
 
             _puzzleInputController.OnMoveAction -= Move;
             _puzzleInputController.OnStartAction -= StartPuzzle;

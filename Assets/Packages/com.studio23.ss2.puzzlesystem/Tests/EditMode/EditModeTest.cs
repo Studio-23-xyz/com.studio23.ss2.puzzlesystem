@@ -51,23 +51,23 @@ namespace Tests.EditMode
         [Test]
         public void PuzzleInfo_CheckPuzzleStatus_CorrectSolution_ShouldReturnTrue()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo("TestPuzzle", 1, 10, new List<int> { 1, 2, 3 }, new List<int> { 0,0,0 },  null);
-             puzzleInfo.SetCurrentValues(0,1);
-             puzzleInfo.SetCurrentValues(1,2);
-             puzzleInfo.SetCurrentValues(2,3);
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo("TestPuzzle", 1, 10, new List<int> { 1, 2, 3 }, new List<int> { 0,0,0 },  null);
+             dialPuzzleInfo.SetCurrentValues(0,1);
+             dialPuzzleInfo.SetCurrentValues(1,2);
+             dialPuzzleInfo.SetCurrentValues(2,3);
              // puzzleInfo.SetCurrentValues(new List<int> { 1, 2, 3 });
-            Assert.IsTrue(puzzleInfo.IsPuzzleSolved);
+            Assert.IsTrue(dialPuzzleInfo.IsPuzzleSolved);
         }
         [Test]
         public void PuzzleInfo_CheckPuzzleStatus_IncorrectSolution_ShouldReturnFalse()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo("TestPuzzle", 1, 10, new List<int> { 1, 2, 3 }, new List<int> { 1, 4, 3 },  null);
-            Assert.IsFalse(puzzleInfo.IsPuzzleSolved);
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo("TestPuzzle", 1, 10, new List<int> { 1, 2, 3 }, new List<int> { 1, 4, 3 },  null);
+            Assert.IsFalse(dialPuzzleInfo.IsPuzzleSolved);
         }
         [Test]
         public void PuzzleInfo_SetCurrentValues_OutsideRange_ShouldWrapInsideRange()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo("TestPuzzle", 0, 10, 
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo("TestPuzzle", 0, 10, 
                 new List<int> { 1, 2, 3 }, 
                 new List<int> { 0,0,0 },  
                 null);
@@ -75,11 +75,10 @@ namespace Tests.EditMode
             /*puzzleInfo.SetCurrentValues(0,-20);
             puzzleInfo.SetCurrentValues(1,20);
             puzzleInfo.SetCurrentValues(2,5);*/
-            puzzleInfo.SetCurrentValues(new List<int> { -20,20,5 });
-            Assert.AreEqual(10, puzzleInfo.CurrentValues[0]);
-            Assert.AreEqual(0, puzzleInfo.CurrentValues[1]);
-            Assert.AreEqual(5, puzzleInfo.CurrentValues[2]);
-           
+            dialPuzzleInfo.SetCurrentValues(new List<int> { -20,20,5 });
+            Assert.AreEqual(10, dialPuzzleInfo.CurrentValues[0]);
+            Assert.AreEqual(0, dialPuzzleInfo.CurrentValues[1]);
+            Assert.AreEqual(5, dialPuzzleInfo.CurrentValues[2]);
         }
         
       
@@ -87,19 +86,19 @@ namespace Tests.EditMode
         [Test]
         public void CombinationPuzzle_StartPuzzle_ShouldSetIsPuzzleStartedToTrue()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo("TestPuzzle", 0, 9, new List<int> { 1, 2, 3 }, new List<int> { 1,2,1 },  null);
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo("TestPuzzle", 0, 9, new List<int> { 1, 2, 3 }, new List<int> { 1,2,1 },  null);
 
-            if(puzzleInfo.Validate()) {
-                CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
+            if(dialPuzzleInfo.Validate()) {
+                var dialPuzzleBase = new CombinationDialPuzzle(dialPuzzleInfo);
                 
                 
                 bool onPuzzleStartInvoked = false;
-                puzzle.OnPuzzleStart += () => onPuzzleStartInvoked = true;
+                dialPuzzleBase.OnPuzzleStart += () => onPuzzleStartInvoked = true;
                 
-                puzzle.StartPuzzle();
+                dialPuzzleBase.StartPuzzle();
                 
                 Assert.IsTrue(onPuzzleStartInvoked);
-                Assert.IsTrue(puzzle.IsPuzzleStarted);
+                Assert.IsTrue(dialPuzzleBase.IsPuzzleStarted);
             }
         }
 
@@ -109,24 +108,24 @@ namespace Tests.EditMode
         [Test]
         public void CombinationPuzzle_StopPuzzle_ShouldSetIsPuzzleStartedToFalse()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo("TestPuzzle", 0, 9, new List<int> { 1, 2, 3 }, new List<int> { 1,2,1 },  null);
-            if (puzzleInfo.Validate())
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo("TestPuzzle", 0, 9, new List<int> { 1, 2, 3 }, new List<int> { 1,2,1 },  null);
+            if (dialPuzzleInfo.Validate())
             {
-                CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
+                CombinationDialPuzzle dialPuzzleBase = new CombinationDialPuzzle(dialPuzzleInfo);
                 
                 bool onPuzzleStartInvoked = false;
-                puzzle.OnPuzzleStart += () => onPuzzleStartInvoked = true;
+                dialPuzzleBase.OnPuzzleStart += () => onPuzzleStartInvoked = true;
                 
                 bool onPuzzleStopInvoked = false;
-                puzzle.OnPuzzleStop += () => onPuzzleStopInvoked = true;
+                dialPuzzleBase.OnPuzzleStop += () => onPuzzleStopInvoked = true;
                 
-                puzzle.StartPuzzle();
+                dialPuzzleBase.StartPuzzle();
                 Assert.IsTrue(onPuzzleStartInvoked);
-                Assert.IsTrue(puzzle.IsPuzzleStarted);
+                Assert.IsTrue(dialPuzzleBase.IsPuzzleStarted);
                 
-                puzzle.StopPuzzle();
+                dialPuzzleBase.StopPuzzle();
                 Assert.IsTrue(onPuzzleStopInvoked);
-                Assert.IsFalse(puzzle.IsPuzzleStarted);
+                Assert.IsFalse(dialPuzzleBase.IsPuzzleStarted);
             }
 
             
@@ -135,7 +134,7 @@ namespace Tests.EditMode
         [Test]
         public void CombinationPuzzle_MovePuzzle_UsingDirections()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo(
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo(
                 "TestPuzzle", 
                 0, 
                 3, 
@@ -143,27 +142,27 @@ namespace Tests.EditMode
                 new List<int> { 0,1,3,0 },  
                 null);
             
-            if (puzzleInfo.Validate())
+            if (dialPuzzleInfo.Validate())
             {
-                CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
-                puzzle.StartPuzzle();
+                CombinationDialPuzzle dialPuzzleBase = new CombinationDialPuzzle(dialPuzzleInfo);
+                dialPuzzleBase.StartPuzzle();
                 
-                puzzle.AdjustDial(new Vector2(0,1));
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,-1));
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,1)); 
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,-1)); 
+                dialPuzzleBase.AdjustDial(new Vector2(0,1));
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,-1));
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,1)); 
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,-1)); 
                 
-                Assert.IsTrue(puzzleInfo.IsPuzzleSolved);
+                Assert.IsTrue(dialPuzzleInfo.IsPuzzleSolved);
             }
 
         }
         [Test]
         public void CombinationPuzzle_MovePuzzle_UsingVector2()
         {
-            PuzzleInfo puzzleInfo = new PuzzleInfo(
+            DialPuzzleInfo dialPuzzleInfo = new DialPuzzleInfo(
                 "TestPuzzle", 
                 0, 
                 3, 
@@ -171,20 +170,20 @@ namespace Tests.EditMode
                 new List<int> { 0,1,3,0 },  
                 null);
             
-            if (puzzleInfo.Validate())
+            if (dialPuzzleInfo.Validate())
             {
-                CombinationPuzzle puzzle = new CombinationPuzzle(puzzleInfo);
-                puzzle.StartPuzzle();
+                CombinationDialPuzzle dialPuzzleBase = new CombinationDialPuzzle(dialPuzzleInfo);
+                dialPuzzleBase.StartPuzzle();
                 
-                puzzle.AdjustDial(new Vector2(0,1));
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,-1));
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,1)); 
-                puzzle.AdjustDial(new Vector2(1,0));
-                puzzle.AdjustDial(new Vector2(0,-1)); 
+                dialPuzzleBase.AdjustDial(new Vector2(0,1));
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,-1));
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,1)); 
+                dialPuzzleBase.AdjustDial(new Vector2(1,0));
+                dialPuzzleBase.AdjustDial(new Vector2(0,-1)); 
                 
-                Assert.IsTrue(puzzleInfo.IsPuzzleSolved);
+                Assert.IsTrue(dialPuzzleInfo.IsPuzzleSolved);
             }
 
         }
