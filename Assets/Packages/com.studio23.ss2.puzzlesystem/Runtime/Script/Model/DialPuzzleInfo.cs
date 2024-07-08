@@ -7,7 +7,7 @@ namespace Studio23.SS2.PuzzleSystem.Data
     /// <summary>
     /// Represents information about a puzzle, including its name, result values, current values, solved status, hints, and solving time.
     /// </summary>
-    public class PuzzleInfo
+    public class DialPuzzleInfo
     {
         /// <summary>
         /// Gets or sets the name of the puzzle.
@@ -81,7 +81,7 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <summary>
         /// Initializes a new instance of the PuzzleInfo class with the specified properties.
         /// </summary>
-        public PuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, List<PuzzleHints> puzzleHints)
+        public DialPuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, List<PuzzleHints> puzzleHints)
         {
             PuzzleName = puzzleName;
             MinValue = minValue;
@@ -124,6 +124,43 @@ namespace Studio23.SS2.PuzzleSystem.Data
                 Debug.LogError($"{index} Index out of range");
             }
         }
- 
+        /// <summary>
+        /// Validates the puzzle information.
+        /// </summary>
+        /// <param name="puzzleInfo">The puzzle information to validate.</param>
+        /// <returns>True if the puzzle information is valid, otherwise false.</returns>
+        public bool Validate()
+        {
+            // 1. MaxValue should be greater than MinValue
+            if (MaxValue <= MinValue)
+            {
+                return false;
+            }
+
+            // 2. CurrentValues and ResultValues should be within the range of MinValue and MaxValue
+            foreach (var value in CurrentValues)
+            {
+                if (value < MinValue || value > MaxValue)
+                {
+                    return false;
+                }
+            }
+
+            foreach (var value in ResultValues)
+            {
+                if (value < MinValue || value > MaxValue)
+                {
+                    return false;
+                }
+            }
+
+            // 3. CurrentValues and ResultValues capacity should be equal
+            if (CurrentValues.Count != ResultValues.Count)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
