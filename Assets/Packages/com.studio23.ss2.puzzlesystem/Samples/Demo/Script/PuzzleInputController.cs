@@ -6,7 +6,6 @@ namespace Studio23.SS2.Sample
 {
     public class PuzzleInputController : MonoBehaviour
     {
-        
         public bool IsOpen;
         public Vector2 Move;
         public bool IsStart;
