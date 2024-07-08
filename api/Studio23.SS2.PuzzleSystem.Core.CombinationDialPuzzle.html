@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CombinationDialPuzzle |  |  </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CombinationDialPuzzle |  |  ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/new/main/apiSpec/new?filename=Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle.md&amp;value=---%0Auid%3A%20Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle">
+
+
+
+  <h1 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle" class="text-break">
+Class CombinationDialPuzzle  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Studio23.html">Studio23</a>.<a class="xref" href="Studio23.SS2.html">SS2</a>.<a class="xref" href="Studio23.SS2.PuzzleSystem.html">PuzzleSystem</a>.<a class="xref" href="Studio23.SS2.PuzzleSystem.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CombinationDialPuzzle : IDialPuzzle, IPuzzle</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CombinationDialPuzzle</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html">IDialPuzzle</a></div>
+      <div><a class="xref" href="Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html">IPuzzle</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__ctor_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__ctor_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)">
+  CombinationDialPuzzle(DialPuzzleInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CombinationDialPuzzle(DialPuzzleInfo puzzleInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>puzzleInfo</code> <a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html">DialPuzzleInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_Dials_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_Dials" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials">
+  Dials
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puzzle all dials information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDial[] Dials { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Studio23.SS2.PuzzleSystem.Interface.IDial.html">IDial</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_IsPuzzleStarted_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_IsPuzzleStarted" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted">
+  IsPuzzleStarted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puzzle current status. stop user to start a puzzle if it is already started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPuzzleStarted { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleHints_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleHints" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints">
+  PuzzleHints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of hints for the puzzle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PuzzleHints&gt; PuzzleHints { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.PuzzleHints.html">PuzzleHints</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleInfo_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleInfo" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo">
+  PuzzleInfo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialPuzzleInfo PuzzleInfo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html">DialPuzzleInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDial_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDial" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial">
+  SelectedDial
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedDial { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDialIndex_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDialIndex" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex">
+  SelectedDialIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Currently selected dial.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedDialIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartTime_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartTime" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime">
+  StartTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the start time when the puzzle is initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StartTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_Studio23_SS2_PuzzleSystem_Data_Direction_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)">
+  AdjustDial(Direction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles player input to move the dial.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustDial(Direction direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="Studio23.SS2.PuzzleSystem.Data.Direction.html">Direction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_Vector2_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Vector2)">
+  AdjustDial(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles player input to move the dial.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustDial(Vector2 input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Input vector representing player movement.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved">
+  CheckPuzzleSolved()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckPuzzleSolved()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ResetPuzzle_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ResetPuzzle" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle">
+  ResetPuzzle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the puzzle to its initial state, clearing any progress made by the player.
+Invokes OnPuzzleReset event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetPuzzle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_System_Collections_Generic_List_System_Int32__" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})">
+  SetCurrentValues(List&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the current values of the puzzle dials and checks if the puzzle is solved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentValues(List&lt;int&gt; newCurrentValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newCurrentValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The new values for the puzzle dials.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_System_Int32_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)">
+  SetCurrentValuesInternal(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the value of a specific dial at the given index and checks if the puzzle is solved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentValuesInternal(int index, int newCurrentValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>This index positioned value will be updated</p>
+</dd>
+    <dt><code>newCurrentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The new value for the currentValue item</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)">
+  SetupPuzzle(DialPuzzleInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the puzzle with puzzle information. you can use constructor instead of this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupPuzzle(DialPuzzleInfo puzzleInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>puzzleInfo</code> <a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html">DialPuzzleInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ShowHint_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ShowHint" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint">
+  ShowHint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides a hint or clue to the player, aiding them in solving the puzzle.
+Useful for UI feedback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowHint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartPuzzle_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartPuzzle" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle">
+  StartPuzzle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initiates the puzzle, allowing the player to interact with it and attempt to solve it.
+Shows puzzle visuals. Subscribes to the dials event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartPuzzle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StopPuzzle_" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StopPuzzle" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle">
+  StopPuzzle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows the player to exit the puzzle, ending their current session.
+Hides visual puzzle. Useful for UI action. Unsubscribes dials event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopPuzzle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnDialValueChanged" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged">
+  OnDialValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;DialInfo&gt; OnDialValueChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialInfo.html">DialInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleSolved" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleSolved">
+  OnPuzzleSolved
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fired when Puzzle is Solved first time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnPuzzleSolved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleStart" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStart">
+  OnPuzzleStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when the puzzle is started</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnPuzzleStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleStop" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStop">
+  OnPuzzleStop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when the puzzle is stop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnPuzzleStop</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnSelectedDialChanged" data-uid="Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged">
+  OnSelectedDialChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Puzzles/CombinationDialPuzzle.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when dial selection changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int&gt; OnSelectedDialChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/Studio-23-xyz" target="_blank">Studio-23-xyz</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

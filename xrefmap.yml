@@ -7,197 +7,281 @@ references:
   commentId: N:Studio23.SS2.PuzzleSystem.Core
   fullName: Studio23.SS2.PuzzleSystem.Core
   nameWithType: Studio23.SS2.PuzzleSystem.Core
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle
-  name: CombinationPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html
-  commentId: T:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle
-  nameWithType: CombinationPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.#ctor(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  name: CombinationPuzzle(PuzzleInfo)
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle__ctor_Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.#ctor(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  name.vb: New(PuzzleInfo)
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.CombinationPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.New(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  nameWithType: CombinationPuzzle.CombinationPuzzle(PuzzleInfo)
-  nameWithType.vb: CombinationPuzzle.New(PuzzleInfo)
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.#ctor*
-  name: CombinationPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle__ctor_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.#ctor
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle
+  name: CombinationDialPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle
+  nameWithType: CombinationDialPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  name: CombinationDialPuzzle(DialPuzzleInfo)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__ctor_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  name.vb: New(DialPuzzleInfo)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CombinationDialPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.New(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  nameWithType: CombinationDialPuzzle.CombinationDialPuzzle(DialPuzzleInfo)
+  nameWithType.vb: CombinationDialPuzzle.New(DialPuzzleInfo)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor*
+  name: CombinationDialPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__ctor_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.CombinationPuzzle
-  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.New
-  nameWithType: CombinationPuzzle.CombinationPuzzle
-  nameWithType.vb: CombinationPuzzle.New
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CombinationDialPuzzle
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.New
+  nameWithType: CombinationDialPuzzle.CombinationDialPuzzle
+  nameWithType.vb: CombinationDialPuzzle.New
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
   name: AdjustDial(Direction)
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_AdjustDial_Studio23_SS2_PuzzleSystem_Data_Direction_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
-  nameWithType: CombinationPuzzle.AdjustDial(Direction)
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Vector2)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_Studio23_SS2_PuzzleSystem_Data_Direction_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  nameWithType: CombinationDialPuzzle.AdjustDial(Direction)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Vector2)
   name: AdjustDial(Vector2)
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_AdjustDial_Vector2_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Vector2)
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial(Vector2)
-  nameWithType: CombinationPuzzle.AdjustDial(Vector2)
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_Vector2_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Vector2)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial(Vector2)
+  nameWithType: CombinationDialPuzzle.AdjustDial(Vector2)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial*
   name: AdjustDial
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_AdjustDial_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDial_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.AdjustDial
-  nameWithType: CombinationPuzzle.AdjustDial
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial
+  nameWithType: CombinationDialPuzzle.AdjustDial
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
+  name: CheckPuzzleSolved()
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved()
+  nameWithType: CombinationDialPuzzle.CheckPuzzleSolved()
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved*
+  name: CheckPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
+  nameWithType: CombinationDialPuzzle.CheckPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
   name: Dials
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_Dials
-  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials
-  nameWithType: CombinationPuzzle.Dials
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_Dials
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
+  nameWithType: CombinationDialPuzzle.Dials
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials*
   name: Dials
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_Dials_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_Dials_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.Dials
-  nameWithType: CombinationPuzzle.Dials
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
+  nameWithType: CombinationDialPuzzle.Dials
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
   name: IsPuzzleStarted
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_IsPuzzleStarted
-  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted
-  nameWithType: CombinationPuzzle.IsPuzzleStarted
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_IsPuzzleStarted
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
+  nameWithType: CombinationDialPuzzle.IsPuzzleStarted
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted*
   name: IsPuzzleStarted
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_IsPuzzleStarted_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_IsPuzzleStarted_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.IsPuzzleStarted
-  nameWithType: CombinationPuzzle.IsPuzzleStarted
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnDialValueChanged
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
+  nameWithType: CombinationDialPuzzle.IsPuzzleStarted
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
   name: OnDialValueChanged
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_OnDialValueChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnDialValueChanged
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnDialValueChanged
-  nameWithType: CombinationPuzzle.OnDialValueChanged
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStart
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnDialValueChanged
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
+  nameWithType: CombinationDialPuzzle.OnDialValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleSolved
+  name: OnPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleSolved
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleSolved
+  nameWithType: CombinationDialPuzzle.OnPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStart
   name: OnPuzzleStart
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_OnPuzzleStart
-  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStart
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStart
-  nameWithType: CombinationPuzzle.OnPuzzleStart
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStop
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleStart
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStart
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStart
+  nameWithType: CombinationDialPuzzle.OnPuzzleStart
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStop
   name: OnPuzzleStop
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_OnPuzzleStop
-  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStop
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleStop
-  nameWithType: CombinationPuzzle.OnPuzzleStop
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleUnlocked
-  name: OnPuzzleUnlocked
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_OnPuzzleUnlocked
-  commentId: F:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleUnlocked
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnPuzzleUnlocked
-  nameWithType: CombinationPuzzle.OnPuzzleUnlocked
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnSelectedDialChanged
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleStop
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStop
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleStop
+  nameWithType: CombinationDialPuzzle.OnPuzzleStop
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged
   name: OnSelectedDialChanged
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_OnSelectedDialChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnSelectedDialChanged
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.OnSelectedDialChanged
-  nameWithType: CombinationPuzzle.OnSelectedDialChanged
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_PuzzleInfo
-  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo
-  nameWithType: CombinationPuzzle.PuzzleInfo
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo*
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_PuzzleInfo_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnSelectedDialChanged
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged
+  nameWithType: CombinationDialPuzzle.OnSelectedDialChanged
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleHints
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
+  nameWithType: CombinationDialPuzzle.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints*
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleHints_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.PuzzleInfo
-  nameWithType: CombinationPuzzle.PuzzleInfo
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
+  nameWithType: CombinationDialPuzzle.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo
+  name: PuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleInfo
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo
+  nameWithType: CombinationDialPuzzle.PuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo*
+  name: PuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleInfo_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleInfo
+  nameWithType: CombinationDialPuzzle.PuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle
   name: ResetPuzzle()
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_ResetPuzzle
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle()
-  nameWithType: CombinationPuzzle.ResetPuzzle()
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ResetPuzzle
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle()
+  nameWithType: CombinationDialPuzzle.ResetPuzzle()
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle*
   name: ResetPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_ResetPuzzle_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ResetPuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ResetPuzzle
-  nameWithType: CombinationPuzzle.ResetPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ResetPuzzle
+  nameWithType: CombinationDialPuzzle.ResetPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial
   name: SelectedDial
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_SelectedDial
-  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial
-  nameWithType: CombinationPuzzle.SelectedDial
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDial
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial
+  nameWithType: CombinationDialPuzzle.SelectedDial
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial*
   name: SelectedDial
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_SelectedDial_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDial_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SelectedDial
-  nameWithType: CombinationPuzzle.SelectedDial
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  name: SetupPuzzle(PuzzleInfo)
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  nameWithType: CombinationPuzzle.SetupPuzzle(PuzzleInfo)
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle*
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDial
+  nameWithType: CombinationDialPuzzle.SelectedDial
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex
+  name: SelectedDialIndex
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDialIndex
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex
+  nameWithType: CombinationDialPuzzle.SelectedDialIndex
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex*
+  name: SelectedDialIndex
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SelectedDialIndex_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SelectedDialIndex
+  nameWithType: CombinationDialPuzzle.SelectedDialIndex
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name: SetCurrentValues(List<int>)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_System_Collections_Generic_List_System_Int32__
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name.vb: SetCurrentValues(List(Of Integer))
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List<int>)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List(Of Integer))
+  nameWithType: CombinationDialPuzzle.SetCurrentValues(List<int>)
+  nameWithType.vb: CombinationDialPuzzle.SetCurrentValues(List(Of Integer))
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues*
+  name: SetCurrentValues
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues
+  nameWithType: CombinationDialPuzzle.SetCurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
+  name: SetCurrentValuesInternal(int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
+  name.vb: SetCurrentValuesInternal(Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
+  nameWithType: CombinationDialPuzzle.SetCurrentValuesInternal(int, int)
+  nameWithType.vb: CombinationDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal*
+  name: SetCurrentValuesInternal
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal
+  nameWithType: CombinationDialPuzzle.SetCurrentValuesInternal
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  name: SetupPuzzle(DialPuzzleInfo)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  nameWithType: CombinationDialPuzzle.SetupPuzzle(DialPuzzleInfo)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle*
   name: SetupPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_SetupPuzzle_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.SetupPuzzle
-  nameWithType: CombinationPuzzle.SetupPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle
+  nameWithType: CombinationDialPuzzle.SetupPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint
   name: ShowHint()
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_ShowHint
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint()
-  nameWithType: CombinationPuzzle.ShowHint()
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ShowHint
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint()
+  nameWithType: CombinationDialPuzzle.ShowHint()
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint*
   name: ShowHint
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_ShowHint_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ShowHint_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.ShowHint
-  nameWithType: CombinationPuzzle.ShowHint
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ShowHint
+  nameWithType: CombinationDialPuzzle.ShowHint
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle
   name: StartPuzzle()
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_StartPuzzle
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle()
-  nameWithType: CombinationPuzzle.StartPuzzle()
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartPuzzle
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle()
+  nameWithType: CombinationDialPuzzle.StartPuzzle()
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle*
   name: StartPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_StartPuzzle_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartPuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StartPuzzle
-  nameWithType: CombinationPuzzle.StartPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartPuzzle
+  nameWithType: CombinationDialPuzzle.StartPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartTime
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime
+  nameWithType: CombinationDialPuzzle.StartTime
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime*
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StartTime_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StartTime
+  nameWithType: CombinationDialPuzzle.StartTime
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
   name: StopPuzzle()
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_StopPuzzle
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle()
-  nameWithType: CombinationPuzzle.StopPuzzle()
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle*
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StopPuzzle
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle()
+  nameWithType: CombinationDialPuzzle.StopPuzzle()
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle*
   name: StopPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationPuzzle_StopPuzzle_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_StopPuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.StopPuzzle
-  nameWithType: CombinationPuzzle.StopPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
+  nameWithType: CombinationDialPuzzle.StopPuzzle
 - uid: Studio23.SS2.PuzzleSystem.Core.DialController
   name: DialController
   href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html
@@ -376,6 +460,199 @@ references:
   commentId: E:Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
   fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
   nameWithType: DialInfo.OnValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
+  name: DialPuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
+  nameWithType: DialPuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
+  name: DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
+  name.vb: New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.DialPuzzleInfo(string, int, int, System.Collections.Generic.List<int>, System.Collections.Generic.List<int>, System.Collections.Generic.List<Studio23.SS2.PuzzleSystem.Data.PuzzleHints>)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.New(String, Integer, Integer, System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Studio23.SS2.PuzzleSystem.Data.PuzzleHints))
+  nameWithType: DialPuzzleInfo.DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
+  nameWithType.vb: DialPuzzleInfo.New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor*
+  name: DialPuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.DialPuzzleInfo
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.New
+  nameWithType: DialPuzzleInfo.DialPuzzleInfo
+  nameWithType.vb: DialPuzzleInfo.New
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
+  name: CheckPuzzleSolved()
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved()
+  nameWithType: DialPuzzleInfo.CheckPuzzleSolved()
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved*
+  name: CheckPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
+  nameWithType: DialPuzzleInfo.CheckPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
+  name: CurrentValues
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CurrentValues
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
+  nameWithType: DialPuzzleInfo.CurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues*
+  name: CurrentValues
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CurrentValues_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
+  nameWithType: DialPuzzleInfo.CurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved
+  name: IsPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_IsPuzzleSolved
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved
+  nameWithType: DialPuzzleInfo.IsPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved*
+  name: IsPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_IsPuzzleSolved_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.IsPuzzleSolved
+  nameWithType: DialPuzzleInfo.IsPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue
+  name: MaxValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_MaxValue
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue
+  nameWithType: DialPuzzleInfo.MaxValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue*
+  name: MaxValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_MaxValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MaxValue
+  nameWithType: DialPuzzleInfo.MaxValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
+  name: MinValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_MinValue
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
+  nameWithType: DialPuzzleInfo.MinValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue*
+  name: MinValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_MinValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
+  nameWithType: DialPuzzleInfo.MinValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleHints
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
+  nameWithType: DialPuzzleInfo.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints*
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleHints_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
+  nameWithType: DialPuzzleInfo.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName
+  name: PuzzleName
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleName
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName
+  nameWithType: DialPuzzleInfo.PuzzleName
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName*
+  name: PuzzleName
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleName_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleName
+  nameWithType: DialPuzzleInfo.PuzzleName
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime
+  name: PuzzleTime
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleTime
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime
+  nameWithType: DialPuzzleInfo.PuzzleTime
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime*
+  name: PuzzleTime
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleTime_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime
+  nameWithType: DialPuzzleInfo.PuzzleTime
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues
+  name: ResultValues
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_ResultValues
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues
+  nameWithType: DialPuzzleInfo.ResultValues
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues*
+  name: ResultValues
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_ResultValues_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.ResultValues
+  nameWithType: DialPuzzleInfo.ResultValues
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name: SetCurrentValues(List<int>)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_System_Collections_Generic_List_System_Int32__
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name.vb: SetCurrentValues(List(Of Integer))
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Collections.Generic.List<int>)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Collections.Generic.List(Of Integer))
+  nameWithType: DialPuzzleInfo.SetCurrentValues(List<int>)
+  nameWithType.vb: DialPuzzleInfo.SetCurrentValues(List(Of Integer))
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Int32,System.Int32)
+  name: SetCurrentValues(int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Int32,System.Int32)
+  name.vb: SetCurrentValues(Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(Integer, Integer)
+  nameWithType: DialPuzzleInfo.SetCurrentValues(int, int)
+  nameWithType.vb: DialPuzzleInfo.SetCurrentValues(Integer, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues*
+  name: SetCurrentValues
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues
+  nameWithType: DialPuzzleInfo.SetCurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_StartTime
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime
+  nameWithType: DialPuzzleInfo.StartTime
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime*
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_StartTime_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime
+  nameWithType: DialPuzzleInfo.StartTime
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate
+  name: Validate()
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_Validate
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate()
+  nameWithType: DialPuzzleInfo.Validate()
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate*
+  name: Validate
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_Validate_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate
+  nameWithType: DialPuzzleInfo.Validate
 - uid: Studio23.SS2.PuzzleSystem.Data.Direction
   name: Direction
   href: api/Studio23.SS2.PuzzleSystem.Data.Direction.html
@@ -438,205 +715,6 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleHints.Symbol
   nameWithType: PuzzleHints.Symbol
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html
-  commentId: T:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo
-  nameWithType: PuzzleInfo
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
-  name: PuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
-  name.vb: New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleInfo(string, int, int, System.Collections.Generic.List<int>, System.Collections.Generic.List<int>, System.Collections.Generic.List<Studio23.SS2.PuzzleSystem.Data.PuzzleHints>)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.New(String, Integer, Integer, System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Studio23.SS2.PuzzleSystem.Data.PuzzleHints))
-  nameWithType: PuzzleInfo.PuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
-  nameWithType.vb: PuzzleInfo.New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.#ctor*
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo__ctor_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleInfo
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.New
-  nameWithType: PuzzleInfo.PuzzleInfo
-  nameWithType.vb: PuzzleInfo.New
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved
-  name: CheckPuzzleSolved()
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_CheckPuzzleSolved
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved()
-  nameWithType: PuzzleInfo.CheckPuzzleSolved()
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved*
-  name: CheckPuzzleSolved
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_CheckPuzzleSolved_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CheckPuzzleSolved
-  nameWithType: PuzzleInfo.CheckPuzzleSolved
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues
-  name: CurrentValues
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_CurrentValues
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues
-  nameWithType: PuzzleInfo.CurrentValues
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues*
-  name: CurrentValues
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_CurrentValues_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.CurrentValues
-  nameWithType: PuzzleInfo.CurrentValues
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved
-  name: IsPuzzleSolved
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_IsPuzzleSolved
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved
-  nameWithType: PuzzleInfo.IsPuzzleSolved
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved*
-  name: IsPuzzleSolved
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_IsPuzzleSolved_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.IsPuzzleSolved
-  nameWithType: PuzzleInfo.IsPuzzleSolved
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue
-  name: MaxValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_MaxValue
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue
-  nameWithType: PuzzleInfo.MaxValue
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue*
-  name: MaxValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_MaxValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MaxValue
-  nameWithType: PuzzleInfo.MaxValue
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue
-  name: MinValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_MinValue
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue
-  nameWithType: PuzzleInfo.MinValue
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue*
-  name: MinValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_MinValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.MinValue
-  nameWithType: PuzzleInfo.MinValue
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints
-  name: PuzzleHints
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleHints
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints
-  nameWithType: PuzzleInfo.PuzzleHints
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints*
-  name: PuzzleHints
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleHints_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleHints
-  nameWithType: PuzzleInfo.PuzzleHints
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName
-  name: PuzzleName
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleName
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName
-  nameWithType: PuzzleInfo.PuzzleName
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName*
-  name: PuzzleName
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleName_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleName
-  nameWithType: PuzzleInfo.PuzzleName
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime
-  name: PuzzleTime
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleTime
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime
-  nameWithType: PuzzleInfo.PuzzleTime
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime*
-  name: PuzzleTime
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_PuzzleTime_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.PuzzleTime
-  nameWithType: PuzzleInfo.PuzzleTime
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues
-  name: ResultValues
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_ResultValues
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues
-  nameWithType: PuzzleInfo.ResultValues
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues*
-  name: ResultValues
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_ResultValues_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.ResultValues
-  nameWithType: PuzzleInfo.ResultValues
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Collections.Generic.List{System.Int32})
-  name: SetCurrentValues(List<int>)
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_SetCurrentValues_System_Collections_Generic_List_System_Int32__
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Collections.Generic.List{System.Int32})
-  name.vb: SetCurrentValues(List(Of Integer))
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Collections.Generic.List<int>)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Collections.Generic.List(Of Integer))
-  nameWithType: PuzzleInfo.SetCurrentValues(List<int>)
-  nameWithType.vb: PuzzleInfo.SetCurrentValues(List(Of Integer))
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Int32,System.Int32)
-  name: SetCurrentValues(int, int)
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_SetCurrentValues_System_Int32_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(System.Int32,System.Int32)
-  name.vb: SetCurrentValues(Integer, Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(int, int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues(Integer, Integer)
-  nameWithType: PuzzleInfo.SetCurrentValues(int, int)
-  nameWithType.vb: PuzzleInfo.SetCurrentValues(Integer, Integer)
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues*
-  name: SetCurrentValues
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_SetCurrentValues_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.SetCurrentValues
-  nameWithType: PuzzleInfo.SetCurrentValues
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime
-  name: StartTime
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_StartTime
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime
-  nameWithType: PuzzleInfo.StartTime
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime*
-  name: StartTime
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_StartTime_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.StartTime
-  nameWithType: PuzzleInfo.StartTime
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions
-  name: PuzzleInfoExtensions
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.html
-  commentId: T:Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions
-  nameWithType: PuzzleInfoExtensions
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  name: Validate(PuzzleInfo)
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfoExtensions_Validate_Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  nameWithType: PuzzleInfoExtensions.Validate(PuzzleInfo)
-- uid: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate*
-  name: Validate
-  href: api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.html#Studio23_SS2_PuzzleSystem_Data_PuzzleInfoExtensions_Validate_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.Validate
-  nameWithType: PuzzleInfoExtensions.Validate
 - uid: Studio23.SS2.PuzzleSystem.Interface
   name: Studio23.SS2.PuzzleSystem.Interface
   href: api/Studio23.SS2.PuzzleSystem.Interface.html
@@ -678,44 +756,152 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
   nameWithType: IDial.DialInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle
+  name: IDialPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle
+  nameWithType: IDialPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  name: AdjustDial(Direction)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDial_Studio23_SS2_PuzzleSystem_Data_Direction_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
+  nameWithType: IDialPuzzle.AdjustDial(Direction)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Vector2)
+  name: AdjustDial(Vector2)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDial_Vector2_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Vector2)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial(Vector2)
+  nameWithType: IDialPuzzle.AdjustDial(Vector2)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial*
+  name: AdjustDial
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDial_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial
+  nameWithType: IDialPuzzle.AdjustDial
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
+  name: Dials
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_Dials
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
+  nameWithType: IDialPuzzle.Dials
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials*
+  name: Dials
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_Dials_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
+  nameWithType: IDialPuzzle.Dials
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
+  name: OnDialValueChanged
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnDialValueChanged
+  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
+  nameWithType: IDialPuzzle.OnDialValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnPuzzleSolved
+  name: OnPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnPuzzleSolved
+  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnPuzzleSolved
+  nameWithType: IDialPuzzle.OnPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnSelectedDialChanged
+  name: OnSelectedDialChanged
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnSelectedDialChanged
+  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnSelectedDialChanged
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnSelectedDialChanged
+  nameWithType: IDialPuzzle.OnSelectedDialChanged
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo
+  name: PuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_PuzzleInfo
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo
+  nameWithType: IDialPuzzle.PuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo*
+  name: PuzzleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_PuzzleInfo_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.PuzzleInfo
+  nameWithType: IDialPuzzle.PuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex
+  name: SelectedDialIndex
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SelectedDialIndex
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex
+  nameWithType: IDialPuzzle.SelectedDialIndex
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex*
+  name: SelectedDialIndex
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SelectedDialIndex_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex
+  nameWithType: IDialPuzzle.SelectedDialIndex
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name: SetCurrentValues(List<int>)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_System_Collections_Generic_List_System_Int32__
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})
+  name.vb: SetCurrentValues(List(Of Integer))
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List<int>)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List(Of Integer))
+  nameWithType: IDialPuzzle.SetCurrentValues(List<int>)
+  nameWithType.vb: IDialPuzzle.SetCurrentValues(List(Of Integer))
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues*
+  name: SetCurrentValues
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues
+  nameWithType: IDialPuzzle.SetCurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
+  name: SetCurrentValuesInternal(int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValuesInternal_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
+  name.vb: SetCurrentValuesInternal(Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
+  nameWithType: IDialPuzzle.SetCurrentValuesInternal(int, int)
+  nameWithType.vb: IDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal*
+  name: SetCurrentValuesInternal
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValuesInternal_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal
+  nameWithType: IDialPuzzle.SetCurrentValuesInternal
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  name: SetupPuzzle(DialPuzzleInfo)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
+  nameWithType: IDialPuzzle.SetupPuzzle(DialPuzzleInfo)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle*
+  name: SetupPuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetupPuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle
+  nameWithType: IDialPuzzle.SetupPuzzle
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle
   name: IPuzzle
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html
   commentId: T:Studio23.SS2.PuzzleSystem.Interface.IPuzzle
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle
   nameWithType: IPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
-  name: AdjustDial(Direction)
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_AdjustDial_Studio23_SS2_PuzzleSystem_Data_Direction_
-  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Studio23.SS2.PuzzleSystem.Data.Direction)
-  nameWithType: IPuzzle.AdjustDial(Direction)
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Vector2)
-  name: AdjustDial(Vector2)
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_AdjustDial_Vector2_
-  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Vector2)
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial(Vector2)
-  nameWithType: IPuzzle.AdjustDial(Vector2)
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial*
-  name: AdjustDial
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_AdjustDial_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved
+  name: CheckPuzzleSolved()
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_CheckPuzzleSolved
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved()
+  nameWithType: IPuzzle.CheckPuzzleSolved()
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved*
+  name: CheckPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_CheckPuzzleSolved_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.AdjustDial
-  nameWithType: IPuzzle.AdjustDial
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials
-  name: Dials
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_Dials
-  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials
-  nameWithType: IPuzzle.Dials
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials*
-  name: Dials
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_Dials_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.Dials
-  nameWithType: IPuzzle.Dials
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved
+  nameWithType: IPuzzle.CheckPuzzleSolved
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.IsPuzzleStarted
   name: IsPuzzleStarted
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_IsPuzzleStarted
@@ -729,6 +915,12 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.IsPuzzleStarted
   nameWithType: IPuzzle.IsPuzzleStarted
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleSolved
+  name: OnPuzzleSolved
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_OnPuzzleSolved
+  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleSolved
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleSolved
+  nameWithType: IPuzzle.OnPuzzleSolved
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleStart
   name: OnPuzzleStart
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_OnPuzzleStart
@@ -741,25 +933,32 @@ references:
   commentId: E:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleStop
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnPuzzleStop
   nameWithType: IPuzzle.OnPuzzleStop
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnSelectedDialChanged
-  name: OnSelectedDialChanged
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_OnSelectedDialChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnSelectedDialChanged
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.OnSelectedDialChanged
-  nameWithType: IPuzzle.OnSelectedDialChanged
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleInfo
-  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo
-  nameWithType: IPuzzle.PuzzleInfo
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo*
-  name: PuzzleInfo
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleInfo_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleHints
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints
+  nameWithType: IPuzzle.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints*
+  name: PuzzleHints
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleHints_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleInfo
-  nameWithType: IPuzzle.PuzzleInfo
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleHints
+  nameWithType: IPuzzle.PuzzleHints
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime
+  name: PuzzleTime
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleTime
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime
+  nameWithType: IPuzzle.PuzzleTime
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime*
+  name: PuzzleTime
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_PuzzleTime_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.PuzzleTime
+  nameWithType: IPuzzle.PuzzleTime
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ResetPuzzle
   name: ResetPuzzle()
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_ResetPuzzle
@@ -773,32 +972,6 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ResetPuzzle
   nameWithType: IPuzzle.ResetPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial
-  name: SelectedDial
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_SelectedDial
-  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial
-  nameWithType: IPuzzle.SelectedDial
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial*
-  name: SelectedDial
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_SelectedDial_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SelectedDial
-  nameWithType: IPuzzle.SelectedDial
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  name: SetupPuzzle(PuzzleInfo)
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_PuzzleInfo_
-  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.PuzzleInfo)
-  nameWithType: IPuzzle.SetupPuzzle(PuzzleInfo)
-- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle*
-  name: SetupPuzzle
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_SetupPuzzle_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.SetupPuzzle
-  nameWithType: IPuzzle.SetupPuzzle
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ShowHint
   name: ShowHint()
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_ShowHint
@@ -825,6 +998,19 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartPuzzle
   nameWithType: IPuzzle.StartPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_StartTime
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime
+  nameWithType: IPuzzle.StartTime
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime*
+  name: StartTime
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_StartTime_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StartTime
+  nameWithType: IPuzzle.StartTime
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.StopPuzzle
   name: StopPuzzle()
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_StopPuzzle

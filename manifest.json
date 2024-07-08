@@ -15,10 +15,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.yml",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationPuzzle.html"
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html"
         }
       },
       "version": ""
@@ -65,6 +65,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.Direction.yml",
       "output": {
         ".html": {
@@ -85,26 +95,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Studio23.SS2.PuzzleSystem.Data.PuzzleInfoExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Data.yml",
       "output": {
         ".html": {
@@ -119,6 +109,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IDial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html"
         }
       },
       "version": ""
