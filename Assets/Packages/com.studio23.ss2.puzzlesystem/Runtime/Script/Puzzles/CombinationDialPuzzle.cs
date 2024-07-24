@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Cysharp.Threading.Tasks;
 using Studio23.SS2.PuzzleSystem.Data;
 using Studio23.SS2.PuzzleSystem.Interface;
 using UnityEngine;
@@ -66,6 +67,17 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
         public event Action  OnPuzzleSolved;
         public bool CheckPuzzleSolved() => PuzzleInfo.CheckPuzzleSolved();
+
+        /// <inheritdoc />
+        public async UniTask ForceSolvePuzzle(bool instant)
+        {
+            SetCurrentValues(PuzzleInfo.ResultValues);
+
+            if (!instant)
+            {
+                await UniTask.Delay(TimeSpan.FromSeconds(.25f));
+            }
+        }
 
         private int _count;
 
@@ -195,7 +207,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
             IsPuzzleStarted = false;
         }
 
-        public void SetCurrentValuesInternal(int index, int newCurrentValue)
+        public void SetCurrentValues(int index, int newCurrentValue)
         {
             var wasPuzzleSolevd = PuzzleInfo.CheckPuzzleSolved();
             PuzzleInfo.SetCurrentValues(index, newCurrentValue);

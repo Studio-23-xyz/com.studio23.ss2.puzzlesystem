@@ -13,13 +13,17 @@ namespace Studio23.SS2.PuzzleSystem.Core
             DialInfo = dialInfo;
         }
         
-        public void AdjustValue(int value)
+        public void AdjustValue(int adjustAmount)
         {
             //  Call AdjustValue
             //  Invoke OnValueChanged
-            DialInfo.AdjustValue(value);
-            
-           
+            DialInfo.AdjustValue(adjustAmount);
+        }
+
+        /// <inheritdoc />
+        public void SetValue(int value)
+        {
+            DialInfo.SetValue(value);
         }
     }
 }

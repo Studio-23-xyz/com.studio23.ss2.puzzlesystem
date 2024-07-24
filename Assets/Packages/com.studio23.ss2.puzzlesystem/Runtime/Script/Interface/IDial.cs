@@ -16,8 +16,9 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// <summary>
         /// Updates/Sets the dial to a new value while rotating or moving. Invokes the OnValueChanged event.
         /// </summary>
-        /// <param name="value">New value for the dial.</param>
-        public void AdjustValue(int value);
+        /// <param name="adjustAmount">New value for the dial.</param>
+        public void AdjustValue(int adjustAmount);
+        public void SetValue(int value);
 
     }
 }

@@ -43,7 +43,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// </summary>
         /// <param name="index"> This index positioned value will be updated</param>
         /// <param name="newCurrentValue">The new value for the currentValue item</param>
-        public void SetCurrentValuesInternal(int index, int newCurrentValue);
+        public void SetCurrentValues(int index, int newCurrentValue);
         #endregion
 
         #region Properties

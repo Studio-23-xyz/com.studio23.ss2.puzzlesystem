@@ -33,7 +33,7 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <summary>
         ///     Gets or sets the current value of the dial.
         /// </summary>
-        public int CurrentValue { get; set; }
+        public int CurrentValue { get; private set; }
 
         /// <summary>
         ///     Gets or sets the minimum value the dial can have.
@@ -56,13 +56,17 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <param name="value">The amount by which the dial value will be adjusted.</param>
         public void AdjustValue(int value)
         {
-            var newValue = CurrentValue + value;
-            if (newValue > MaxValue)
-                CurrentValue = MinValue;
-            else if (newValue < MinValue)
-                CurrentValue = MaxValue;
-            else
-                CurrentValue = newValue;
+            var newValue =Mathf.Clamp(CurrentValue + value, MinValue, MaxValue) ;
+            SetValue(newValue);
+        }
+        
+        /// <summary>
+        ///     Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.
+        /// </summary>
+        /// <param name="value">The amount by which the dial value will be adjusted.</param>
+        public void SetValue(int value)
+        {
+            CurrentValue = value;
             OnValueChanged?.Invoke(this);
         }
     }

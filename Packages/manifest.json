@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": "2.5.5",
     "com.studio23.ss2.upmassistant": "1.0.2",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
@@ -46,7 +47,8 @@
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.studio23.ss2"
+        "com.studio23.ss2",
+        "com.cysharp.unitask"
       ]
     }
   ]

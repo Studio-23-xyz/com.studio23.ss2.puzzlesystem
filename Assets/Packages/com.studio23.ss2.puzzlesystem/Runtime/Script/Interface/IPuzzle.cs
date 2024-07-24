@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Studio23.SS2.PuzzleSystem.Data;
 
 namespace Studio23.SS2.PuzzleSystem.Interface
@@ -10,7 +11,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// Gets or sets the start time when the puzzle is initialized.
         /// </summary>
         public DateTime StartTime { get; }
-        
+
         /// <summary>
         /// Gets the time puzzle has been elapsed in seconds.
         /// </summary>
@@ -23,7 +24,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
                 return (float)elapsed.TotalSeconds;
             }
         }
-        
+
         /// <summary>
         /// Resets the puzzle to its initial state, clearing any progress made by the player.
         /// Invokes OnPuzzleReset event.
@@ -52,11 +53,12 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// Puzzle current status. stop user to start a puzzle if it is already started.
         /// </summary>
         bool IsPuzzleStarted { get; set; }
+
         /// <summary>
         /// Gets or sets the list of hints for the puzzle.
         /// </summary>
         public List<PuzzleHints> PuzzleHints { get; set; }
-        
+
         /// <summary>
         /// Triggered when the puzzle is started
         /// </summary>
@@ -66,7 +68,9 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// Triggered when the puzzle is stop
         /// </summary>
         event Action OnPuzzleStop;
+
         event Action OnPuzzleSolved;
         public bool CheckPuzzleSolved();
+        public UniTask ForceSolvePuzzle(bool instant);
     }
 }

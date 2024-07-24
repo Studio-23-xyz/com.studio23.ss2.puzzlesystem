@@ -4,6 +4,7 @@
  */
 
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -40,6 +41,11 @@ namespace Studio23.SS2.Sample
 
         private CombinationDialPuzzle _combinationDialDialPuzzleBase;
         private bool _isPuzzleStarted;
+        
+        
+        [ContextMenu("zzs")]
+        public void ForceSolveHelper() => _combinationDialDialPuzzleBase.ForceSolvePuzzle(false).Forget();
+
         
         private void Start()
         {
