@@ -1,0 +1,39 @@
+{
+  "name": "com.studio23.ss2.puzzlesystem",
+  "version": "1.0.6",
+  "displayName": "Puzzle System",
+  "description": "Puzzle System is a framework designed to manage interactive puzzles in game development. It provides a structured way to create, handle, and solve puzzles within a game environment. The Puzzle System described here includes components for defining puzzles, managing dial interactions, validating solutions, and providing hints to players. Our puzzle system is based on Lock & Key Puzzle Mechanics",
+  "unity": "2022.3",
+  "unityRelease": "9f1",
+  "documentationUrl": "https://openupm.com/packages/com.studio23.ss2.puzzlesystem",
+  "changelogUrl": "https://openupm.com/packages/com.studio23.ss2.puzzlesystem",
+  "licensesUrl": "https://opensource.org/license/mit/",
+  "scopedRegistries": [
+    {
+      "name": "Studio 23",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.studio23.ss2"
+      ]
+    }
+  ],
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Functional Example",
+      "description": "A small sample to demonstrate the abilities of the package.",
+      "path": "Samples~/Demo"
+    }
+  ],
+  "keywords": [
+    "Puzzle",
+    "Lock & Key",
+    "Combination Puzzle",
+    "Puzzle System"
+  ],
+  "author": {
+    "name": "Studio 23",
+    "email": "contact@studio-23.xyz",
+    "url": "https://studio-23.xyz"
+  }
+}

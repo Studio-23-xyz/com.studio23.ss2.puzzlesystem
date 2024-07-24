@@ -1,0 +1,73 @@
+using System;
+using UnityEngine;
+
+namespace Studio23.SS2.PuzzleSystem.Data
+{
+    /// <summary>
+    ///     Represents information about a dial, including its unique identifier, current value, minimum value, and maximum
+    ///     value.
+    /// </summary>
+    public class DialInfo
+    {
+        /// <summary>
+        ///     Initializes a new instance of the DialInfo class with the specified properties.
+        /// </summary>
+        /// <param name="indexID">The unique identifier of the dial. Unchangeable after setup.</param>
+        /// <param name="currentValue">The current value of the dial.</param>
+        /// <param name="minValue">The minimum value the dial can have.</param>
+        /// <param name="maxValue">The maximum value the dial can have.</param>
+        public DialInfo(int indexID, int currentValue, int minValue, int maxValue)
+        {
+            IndexID = indexID;
+            MinValue = minValue;
+            MaxValue = maxValue;
+            var value = Mathf.Clamp(currentValue, minValue, maxValue);
+            CurrentValue = value;
+        }
+
+        /// <summary>
+        ///     Gets or sets the unique identifier of the dial. Unchangeable after set it up.
+        /// </summary>
+        public int IndexID { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the current value of the dial.
+        /// </summary>
+        public int CurrentValue { get; private set; }
+
+        /// <summary>
+        ///     Gets or sets the minimum value the dial can have.
+        /// </summary>
+        public int MinValue { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the maximum value the dial can have.
+        /// </summary>
+        public int MaxValue { get; set; }
+
+        /// <summary>
+        ///     Event triggered when the value of the dial changes, indicating player interaction or manipulation.
+        /// </summary>
+        public event Action<DialInfo> OnValueChanged;
+
+        /// <summary>
+        ///     Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.
+        /// </summary>
+        /// <param name="value">The amount by which the dial value will be adjusted.</param>
+        public void AdjustValue(int value)
+        {
+            var newValue =Mathf.Clamp(CurrentValue + value, MinValue, MaxValue) ;
+            SetValue(newValue);
+        }
+        
+        /// <summary>
+        ///     Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.
+        /// </summary>
+        /// <param name="value">The amount by which the dial value will be adjusted.</param>
+        public void SetValue(int value)
+        {
+            CurrentValue = value;
+            OnValueChanged?.Invoke(this);
+        }
+    }
+}
