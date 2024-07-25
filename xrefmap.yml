@@ -77,6 +77,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
   nameWithType: CombinationDialPuzzle.Dials
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle(System.Boolean)
+  name: ForceSolvePuzzle(bool)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ForceSolvePuzzle_System_Boolean_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle(System.Boolean)
+  name.vb: ForceSolvePuzzle(Boolean)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle(bool)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle(Boolean)
+  nameWithType: CombinationDialPuzzle.ForceSolvePuzzle(bool)
+  nameWithType.vb: CombinationDialPuzzle.ForceSolvePuzzle(Boolean)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle*
+  name: ForceSolvePuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_ForceSolvePuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.ForceSolvePuzzle
+  nameWithType: CombinationDialPuzzle.ForceSolvePuzzle
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
   name: IsPuzzleStarted
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_IsPuzzleStarted
@@ -194,6 +210,15 @@ references:
   fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Collections.Generic.List(Of Integer))
   nameWithType: CombinationDialPuzzle.SetCurrentValues(List<int>)
   nameWithType.vb: CombinationDialPuzzle.SetCurrentValues(List(Of Integer))
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Int32,System.Int32)
+  name: SetCurrentValues(int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(System.Int32,System.Int32)
+  name.vb: SetCurrentValues(Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues(Integer, Integer)
+  nameWithType: CombinationDialPuzzle.SetCurrentValues(int, int)
+  nameWithType.vb: CombinationDialPuzzle.SetCurrentValues(Integer, Integer)
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues*
   name: SetCurrentValues
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValues_
@@ -201,22 +226,6 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues
   nameWithType: CombinationDialPuzzle.SetCurrentValues
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
-  name: SetCurrentValuesInternal(int, int)
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_System_Int32_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
-  name.vb: SetCurrentValuesInternal(Integer, Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(int, int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
-  nameWithType: CombinationDialPuzzle.SetCurrentValuesInternal(int, int)
-  nameWithType.vb: CombinationDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal*
-  name: SetCurrentValuesInternal
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetCurrentValuesInternal_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValuesInternal
-  nameWithType: CombinationDialPuzzle.SetCurrentValuesInternal
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
   name: SetupPuzzle(DialPuzzleInfo)
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
@@ -336,6 +345,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
   nameWithType: DialController.DialInfo
+- uid: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue(System.Int32)
+  name: SetValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.DialController.SetValue(System.Int32)
+  name.vb: SetValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue(Integer)
+  nameWithType: DialController.SetValue(int)
+  nameWithType.vb: DialController.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue*
+  name: SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.DialController.SetValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue
+  nameWithType: DialController.SetValue
 - uid: Studio23.SS2.PuzzleSystem.Core.Vector2Extensions
   name: Vector2Extensions
   href: api/Studio23.SS2.PuzzleSystem.Core.Vector2Extensions.html
@@ -460,6 +485,22 @@ references:
   commentId: E:Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
   fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
   nameWithType: DialInfo.OnValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)
+  name: SetValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)
+  name.vb: SetValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(Integer)
+  nameWithType: DialInfo.SetValue(int)
+  nameWithType.vb: DialInfo.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue*
+  name: SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue
+  nameWithType: DialInfo.SetValue
 - uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
   name: DialPuzzleInfo
   href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html
@@ -756,6 +797,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
   nameWithType: IDial.DialInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue(System.Int32)
+  name: SetValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue(System.Int32)
+  name.vb: SetValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue(Integer)
+  nameWithType: IDial.SetValue(int)
+  nameWithType.vb: IDial.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue*
+  name: SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue
+  nameWithType: IDial.SetValue
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle
   name: IDialPuzzle
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html
@@ -847,6 +904,15 @@ references:
   fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List(Of Integer))
   nameWithType: IDialPuzzle.SetCurrentValues(List<int>)
   nameWithType.vb: IDialPuzzle.SetCurrentValues(List(Of Integer))
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Int32,System.Int32)
+  name: SetCurrentValues(int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Int32,System.Int32)
+  name.vb: SetCurrentValues(Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(Integer, Integer)
+  nameWithType: IDialPuzzle.SetCurrentValues(int, int)
+  nameWithType.vb: IDialPuzzle.SetCurrentValues(Integer, Integer)
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues*
   name: SetCurrentValues
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_
@@ -854,22 +920,6 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues
   nameWithType: IDialPuzzle.SetCurrentValues
-- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
-  name: SetCurrentValuesInternal(int, int)
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValuesInternal_System_Int32_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(System.Int32,System.Int32)
-  name.vb: SetCurrentValuesInternal(Integer, Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(int, int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
-  nameWithType: IDialPuzzle.SetCurrentValuesInternal(int, int)
-  nameWithType.vb: IDialPuzzle.SetCurrentValuesInternal(Integer, Integer)
-- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal*
-  name: SetCurrentValuesInternal
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValuesInternal_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValuesInternal
-  nameWithType: IDialPuzzle.SetCurrentValuesInternal
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
   name: SetupPuzzle(DialPuzzleInfo)
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
@@ -902,6 +952,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.CheckPuzzleSolved
   nameWithType: IPuzzle.CheckPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle(System.Boolean)
+  name: ForceSolvePuzzle(bool)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_ForceSolvePuzzle_System_Boolean_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle(System.Boolean)
+  name.vb: ForceSolvePuzzle(Boolean)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle(bool)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle(Boolean)
+  nameWithType: IPuzzle.ForceSolvePuzzle(bool)
+  nameWithType.vb: IPuzzle.ForceSolvePuzzle(Boolean)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle*
+  name: ForceSolvePuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_ForceSolvePuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.ForceSolvePuzzle
+  nameWithType: IPuzzle.ForceSolvePuzzle
 - uid: Studio23.SS2.PuzzleSystem.Interface.IPuzzle.IsPuzzleStarted
   name: IsPuzzleStarted
   href: api/Studio23.SS2.PuzzleSystem.Interface.IPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IPuzzle_IsPuzzleStarted
@@ -1036,6 +1102,19 @@ references:
   commentId: T:Studio23.SS2.Sample.DemoPuzzleController
   fullName: Studio23.SS2.Sample.DemoPuzzleController
   nameWithType: DemoPuzzleController
+- uid: Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper
+  name: ForceSolveHelper()
+  href: api/Studio23.SS2.Sample.DemoPuzzleController.html#Studio23_SS2_Sample_DemoPuzzleController_ForceSolveHelper
+  commentId: M:Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper
+  fullName: Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper()
+  nameWithType: DemoPuzzleController.ForceSolveHelper()
+- uid: Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper*
+  name: ForceSolveHelper
+  href: api/Studio23.SS2.Sample.DemoPuzzleController.html#Studio23_SS2_Sample_DemoPuzzleController_ForceSolveHelper_
+  commentId: Overload:Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper
+  isSpec: "True"
+  fullName: Studio23.SS2.Sample.DemoPuzzleController.ForceSolveHelper
+  nameWithType: DemoPuzzleController.ForceSolveHelper
 - uid: Studio23.SS2.Sample.PuzzleInputController
   name: PuzzleInputController
   href: api/Studio23.SS2.Sample.PuzzleInputController.html

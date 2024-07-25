@@ -212,7 +212,7 @@ value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CurrentValue { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int CurrentValue { get; }</code></pre>
   </div>
 
 
@@ -345,6 +345,39 @@ value.</p>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AdjustValue(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The amount by which the dial value will be adjusted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)">
+  SetValue(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
