@@ -56,7 +56,13 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <param name="value">The amount by which the dial value will be adjusted.</param>
         public void AdjustValue(int value)
         {
-            var newValue =Mathf.Clamp(CurrentValue + value, MinValue, MaxValue) ;
+            var newValue = CurrentValue + value;
+            if (newValue > MaxValue)
+                CurrentValue = MinValue;
+            else if (newValue < MinValue)
+                CurrentValue = MaxValue;
+            else
+                CurrentValue = newValue;
             SetValue(newValue);
         }
         
@@ -66,7 +72,8 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <param name="value">The amount by which the dial value will be adjusted.</param>
         public void SetValue(int value)
         {
-            CurrentValue = value;
+            CurrentValue = Mathf.Clamp(value, MinValue, MaxValue) ;
+
             OnValueChanged?.Invoke(this);
         }
     }
