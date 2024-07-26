@@ -58,11 +58,9 @@ namespace Studio23.SS2.PuzzleSystem.Data
         {
             var newValue = CurrentValue + value;
             if (newValue > MaxValue)
-                CurrentValue = MinValue;
+                newValue = MinValue;
             else if (newValue < MinValue)
-                CurrentValue = MaxValue;
-            else
-                CurrentValue = newValue;
+                newValue = MaxValue;
             SetValue(newValue);
         }
         
