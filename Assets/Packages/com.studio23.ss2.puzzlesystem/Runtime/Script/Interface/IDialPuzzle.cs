@@ -33,6 +33,13 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         public void AdjustDial(Direction input);
 
         /// <summary>
+        /// Handles player input to move the dial.
+        /// </summary>
+        /// <param name="input">Input representing dial movement.</param>
+        /// <param name="newValue">NewValue representing selected dial target value</param>
+        public void AdjustDialWithValue(Direction input, int newValue = 0);
+
+        /// <summary>
         /// Updates the current values of the puzzle dials and checks if the puzzle is solved.
         /// </summary>
         /// <param name="newCurrentValues">The new values for the puzzle dials.</param>
@@ -69,7 +76,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// Fired when Puzzle is Solved first time
         /// </summary>
         public event Action OnPuzzleSolved;
-        public event Action<DialInfo> OnDialValueChanged;
+        public event Action<BaseDialInfo> OnDialUpdated;
 
         #endregion
     }

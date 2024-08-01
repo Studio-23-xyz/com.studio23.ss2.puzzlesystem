@@ -1,6 +1,6 @@
 {
   "name": "com.studio23.ss2.puzzlesystem",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "displayName": "Puzzle System",
   "description": "Puzzle System is a framework designed to manage interactive puzzles in game development. It provides a structured way to create, handle, and solve puzzles within a game environment. The Puzzle System described here includes components for defining puzzles, managing dial interactions, validating solutions, and providing hints to players. Our puzzle system is based on Lock & Key Puzzle Mechanics",
   "unity": "2022.3",

@@ -11,7 +11,7 @@ namespace Studio23.SS2.PuzzleSystem.Interface
         /// <summary>
         /// Represents information about a dial, including its unique identifier, current value, minimum value, and maximum value.
         /// </summary>
-        public DialInfo DialInfo { get; set; }
+        public BaseDialInfo DialIndexInfo { get; set; }
         
         /// <summary>
         /// Updates/Sets the dial to a new value while rotating or moving. Invokes the OnValueChanged event.

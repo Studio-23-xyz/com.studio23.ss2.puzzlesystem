@@ -5,25 +5,25 @@ namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class DialController : IDial
     {
-        public DialInfo DialInfo { get; set; }
+        public BaseDialInfo DialIndexInfo { get; set; }
         
-        public DialController(DialInfo dialInfo)
+        public DialController(BaseDialInfo dialIndexInfo)
         {
             // Initialize Dial Info
-            DialInfo = dialInfo;
+            DialIndexInfo = dialIndexInfo;
         }
         
         public void AdjustValue(int adjustAmount)
         {
             //  Call AdjustValue
-            //  Invoke OnValueChanged
-            DialInfo.AdjustValue(adjustAmount);
+            DialIndexInfo.AdjustValue(adjustAmount);
         }
 
         /// <inheritdoc />
         public void SetValue(int value)
         {
-            DialInfo.SetValue(value);
+            //  Invoke OnValueChanged
+            DialIndexInfo.SetValue(DialIndexInfo.AdjustValue(value));
         }
     }
 }

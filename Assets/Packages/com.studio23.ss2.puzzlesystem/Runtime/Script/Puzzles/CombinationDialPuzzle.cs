@@ -12,6 +12,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class CombinationDialPuzzle : IDialPuzzle
     {
+        [SerializeField] public bool _dialSelectionHorizontally;
         private int _selectedDial { get; set; }
 
         public int SelectedDial
@@ -63,7 +64,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
         public event Action OnPuzzleStart;
         public event Action OnPuzzleStop;
         public event Action<int> OnSelectedDialChanged;
-        public event Action<DialInfo> OnDialValueChanged;
+        public event Action<BaseDialInfo> OnDialUpdated; 
 
         public event Action  OnPuzzleSolved;
         public bool CheckPuzzleSolved() => PuzzleInfo.CheckPuzzleSolved();
@@ -91,28 +92,30 @@ namespace Studio23.SS2.PuzzleSystem.Core
                 return;
             }
 
+            SetUpDialSelectionOrientation();
+
             PuzzleInfo = puzzleInfo;
             _count = PuzzleInfo.CurrentValues.Count;
 
 
             //  Initialize/Setup each Dials
             Dials = new IDial[_count];
+            
+        }
 
-            for (int i = 0; i < Dials.Length; i++)
+        public void PopulateDial(IDial[] dials)
+        {
+            for (int i = 0; i < dials.Length; i++)
             {
-                DialInfo dialInfo = new DialInfo(i, PuzzleInfo.CurrentValues[i], PuzzleInfo.MinValue,
-                    PuzzleInfo.MaxValue);
-                var newDial = new DialController(dialInfo);
-                Dials[i] = newDial;
-
-                Dials[i].DialInfo.OnValueChanged += DialValueChanged;
+                Dials[i] = dials[i];
+                Dials[i].DialIndexInfo.OnValueChanged += DialIndexValueChanged;
             }
         }
 
-        private void DialValueChanged(DialInfo dialInfo)
+        protected void DialIndexValueChanged(BaseDialInfo dialIndexInfo)
         {
-            OnDialValueChanged?.Invoke(dialInfo);
-            PuzzleInfo.SetCurrentValues(dialInfo.IndexID, dialInfo.CurrentValue); //_selectedDial = IndexID;
+            PuzzleInfo.SetCurrentValues(dialIndexInfo.IndexID, dialIndexInfo.CurrentValue); //_selectedDial = IndexID;
+            OnDialUpdated?.Invoke(dialIndexInfo);
         }
 
 
@@ -137,6 +140,11 @@ namespace Studio23.SS2.PuzzleSystem.Core
             }
         }
 
+        public void SetUpDialSelectionOrientation(bool isHorizontalOrientation = true)
+        {
+            _dialSelectionHorizontally = isHorizontalOrientation;
+        }
+
         public void AdjustDial(Direction direction)
         {
             if (!IsPuzzleStarted)
@@ -159,6 +167,48 @@ namespace Studio23.SS2.PuzzleSystem.Core
                 case Direction.Left:
                     SelectedDial--;
 
+                    break;
+                default:
+                    Debug.Log($"AdjustDial Error! : {direction}");
+                    break;
+            }
+
+            if (PuzzleInfo.IsPuzzleSolved)
+                OnPuzzleSolved?.Invoke();
+        }
+
+        public void AdjustDialWithValue(Direction direction, int newValue = 0)
+        {
+            if (!IsPuzzleStarted)
+                return;
+            if (PuzzleInfo.IsPuzzleSolved)
+                return;
+
+            switch (direction)
+            {
+                case Direction.Up:
+                    if (_dialSelectionHorizontally)
+                        Dials[SelectedDial].SetValue(newValue);
+                    else
+                        SelectedDial++;
+                    break;
+                case Direction.Down:
+                    if (_dialSelectionHorizontally)
+                        Dials[SelectedDial].SetValue(-newValue);
+                    else
+                        SelectedDial--;
+                    break;
+                case Direction.Right:
+                    if (_dialSelectionHorizontally)
+                        SelectedDial++;
+                    else
+                        Dials[SelectedDial].SetValue(newValue);
+                    break;
+                case Direction.Left:
+                    if (_dialSelectionHorizontally)
+                        SelectedDial--;
+                    else
+                        Dials[SelectedDial].SetValue(-newValue);
                     break;
                 default:
                     Debug.Log($"AdjustDial Error! : {direction}");
@@ -199,7 +249,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
             if (!IsPuzzleStarted) return;
             for (int i = 0; i < Dials.Length; i++)
             {
-                Dials[i].DialInfo.OnValueChanged -= OnDialValueChanged;
+                Dials[i].DialIndexInfo.OnValueChanged -= DialIndexValueChanged;
             }
 
             Dials = null;
@@ -210,7 +260,8 @@ namespace Studio23.SS2.PuzzleSystem.Core
         public void SetCurrentValues(int index, int newCurrentValue)
         {
             var wasPuzzleSolevd = PuzzleInfo.CheckPuzzleSolved();
-            PuzzleInfo.SetCurrentValues(index, newCurrentValue);
+            Dials[index].AdjustValue(newCurrentValue);
+            PuzzleInfo.SetCurrentValues(index, Dials[index].DialIndexInfo.CurrentValue);
             if (!wasPuzzleSolevd && PuzzleInfo.CheckPuzzleSolved())
             {
                 OnPuzzleSolved?.Invoke();
@@ -229,7 +280,8 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
             for (int i = 0; i < newCurrentValues.Count; i++)
             {
-                PuzzleInfo.SetCurrentValues(i, newCurrentValues[i]);
+                Dials[i].AdjustValue(newCurrentValues[i]);
+                PuzzleInfo.SetCurrentValues(i, Dials[i].DialIndexInfo.CurrentValue);
             }
 
             if (!wasPuzzleSolevd && PuzzleInfo.CheckPuzzleSolved())
