@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DialInfo |  |  </title>
+      <title>Class BaseDialInfo |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DialInfo |  |  ">
+      <meta name="title" content="Class BaseDialInfo |  |  ">
       
       <meta name="description" content="Represents information about a dial, including its unique identifier, current value, minimum value, and maximum value.">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/new/main/apiSpec/new?filename=Studio23_SS2_PuzzleSystem_Data_DialInfo.md&amp;value=---%0Auid%3A%20Studio23.SS2.PuzzleSystem.Data.DialInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/new/main/apiSpec/new?filename=Studio23_SS2_PuzzleSystem_Data_BaseDialInfo.md&amp;value=---%0Auid%3A%20Studio23.SS2.PuzzleSystem.Data.BaseDialInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo">
+        <article data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo">
 
 
 
-  <h1 id="Studio23_SS2_PuzzleSystem_Data_DialInfo" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo" class="text-break">
-Class DialInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo" class="text-break">
+Class BaseDialInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,7 +103,7 @@ value.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DialInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public class BaseDialInfo</code></pre>
   </div>
 
 
@@ -113,11 +113,18 @@ value.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DialInfo</span></div>
+      <div><span class="xref">BaseDialInfo</span></div>
     </dd>
   </dl>
 
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html">DialAngleInfo</a></div>
+      <div><a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html">DialIndexInfo</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -150,61 +157,15 @@ value.</p>
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo__ctor_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor*"></a>
-
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
-  DialInfo(int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Initializes a new instance of the DialInfo class with the specified properties.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DialInfo(int indexID, int currentValue, int minValue, int maxValue)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indexID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The unique identifier of the dial. Unchangeable after setup.</p>
-</dd>
-    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The current value of the dial.</p>
-</dd>
-    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The minimum value the dial can have.</p>
-</dd>
-    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The maximum value the dial can have.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_CurrentValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_CurrentValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_CurrentValue" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_CurrentValue" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue">
   CurrentValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the current value of the dial.</p>
@@ -232,11 +193,11 @@ value.</p>
 
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_IndexID_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_IndexID_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_IndexID" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_IndexID" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID">
   IndexID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the unique identifier of the dial. Unchangeable after set it up.</p>
@@ -264,11 +225,11 @@ value.</p>
 
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_MaxValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MaxValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_MaxValue" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MaxValue" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue">
   MaxValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the maximum value the dial can have.</p>
@@ -296,11 +257,11 @@ value.</p>
 
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_MinValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MinValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_MinValue" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MinValue" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue">
   MinValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the minimum value the dial can have.</p>
@@ -332,11 +293,11 @@ value.</p>
 </h2>
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_AdjustValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_AdjustValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_AdjustValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue(System.Int32)">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_AdjustValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue(System.Int32)">
   AdjustValue(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.</p>
@@ -344,7 +305,7 @@ value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AdjustValue(int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int AdjustValue(int value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -352,6 +313,42 @@ value.</p>
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p>The amount by which the dial value will be adjusted.</p>
 </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetCurrentValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetCurrentValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue(System.Int32)">
+  SetCurrentValue(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetCurrentValue(int currentVal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentVal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -365,11 +362,11 @@ value.</p>
 
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue*"></a>
+  <a id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetValue_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetValue_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue(System.Int32)">
   SetValue(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adjusts the value of the dial by the specified amount. This method fires the OnValueChanged event.</p>
@@ -377,7 +374,7 @@ value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetValue(int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetValue(int value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -403,9 +400,9 @@ value.</p>
 
 
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialInfo_OnValueChanged" data-uid="Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged">
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_OnValueChanged" data-uid="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.OnValueChanged">
   OnValueChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialInfo.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/BaseDialInfo.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when the value of the dial changes, indicating player interaction or manipulation.</p>
@@ -413,7 +410,7 @@ value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;DialInfo&gt; OnValueChanged</code></pre>
+    <pre><code class="lang-csharp hljs">public event Action&lt;BaseDialInfo&gt; OnValueChanged</code></pre>
   </div>
 
 
@@ -423,7 +420,7 @@ value.</p>
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialInfo.html">DialInfo</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html">BaseDialInfo</a>&gt;</dt>
     <dd></dd>
   </dl>
 

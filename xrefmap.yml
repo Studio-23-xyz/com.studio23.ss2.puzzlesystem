@@ -51,6 +51,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDial
   nameWithType: CombinationDialPuzzle.AdjustDial
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction,System.Int32)
+  name: AdjustDialWithValue(Direction, int)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDialWithValue_Studio23_SS2_PuzzleSystem_Data_Direction_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction,System.Int32)
+  name.vb: AdjustDialWithValue(Direction, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction, Integer)
+  nameWithType: CombinationDialPuzzle.AdjustDialWithValue(Direction, int)
+  nameWithType.vb: CombinationDialPuzzle.AdjustDialWithValue(Direction, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue*
+  name: AdjustDialWithValue
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_AdjustDialWithValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue
+  nameWithType: CombinationDialPuzzle.AdjustDialWithValue
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
   name: CheckPuzzleSolved()
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved
@@ -64,6 +80,19 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
   nameWithType: CombinationDialPuzzle.CheckPuzzleSolved
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  name: DialIndexValueChanged(BaseDialInfo)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_DialIndexValueChanged_Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  nameWithType: CombinationDialPuzzle.DialIndexValueChanged(BaseDialInfo)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged*
+  name: DialIndexValueChanged
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_DialIndexValueChanged_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.DialIndexValueChanged
+  nameWithType: CombinationDialPuzzle.DialIndexValueChanged
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.Dials
   name: Dials
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_Dials
@@ -106,12 +135,12 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.IsPuzzleStarted
   nameWithType: CombinationDialPuzzle.IsPuzzleStarted
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
-  name: OnDialValueChanged
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnDialValueChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialValueChanged
-  nameWithType: CombinationDialPuzzle.OnDialValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialUpdated
+  name: OnDialUpdated
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnDialUpdated
+  commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialUpdated
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnDialUpdated
+  nameWithType: CombinationDialPuzzle.OnDialUpdated
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnPuzzleSolved
   name: OnPuzzleSolved
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_OnPuzzleSolved
@@ -136,6 +165,22 @@ references:
   commentId: E:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.OnSelectedDialChanged
   nameWithType: CombinationDialPuzzle.OnSelectedDialChanged
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial(Studio23.SS2.PuzzleSystem.Interface.IDial[])
+  name: PopulateDial(IDial[])
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PopulateDial_Studio23_SS2_PuzzleSystem_Interface_IDial___
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial(Studio23.SS2.PuzzleSystem.Interface.IDial[])
+  name.vb: PopulateDial(IDial())
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial(Studio23.SS2.PuzzleSystem.Interface.IDial[])
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial(Studio23.SS2.PuzzleSystem.Interface.IDial())
+  nameWithType: CombinationDialPuzzle.PopulateDial(IDial[])
+  nameWithType.vb: CombinationDialPuzzle.PopulateDial(IDial())
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial*
+  name: PopulateDial
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PopulateDial_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PopulateDial
+  nameWithType: CombinationDialPuzzle.PopulateDial
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.PuzzleHints
   name: PuzzleHints
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_PuzzleHints
@@ -226,6 +271,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetCurrentValues
   nameWithType: CombinationDialPuzzle.SetCurrentValues
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation(System.Boolean)
+  name: SetUpDialSelectionOrientation(bool)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetUpDialSelectionOrientation_System_Boolean_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation(System.Boolean)
+  name.vb: SetUpDialSelectionOrientation(Boolean)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation(bool)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation(Boolean)
+  nameWithType: CombinationDialPuzzle.SetUpDialSelectionOrientation(bool)
+  nameWithType.vb: CombinationDialPuzzle.SetUpDialSelectionOrientation(Boolean)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation*
+  name: SetUpDialSelectionOrientation
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetUpDialSelectionOrientation_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetUpDialSelectionOrientation
+  nameWithType: CombinationDialPuzzle.SetUpDialSelectionOrientation
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.SetupPuzzle(Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo)
   name: SetupPuzzle(DialPuzzleInfo)
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_SetupPuzzle_Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_
@@ -291,21 +352,27 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
   nameWithType: CombinationDialPuzzle.StopPuzzle
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
+  name: _dialSelectionHorizontally
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__dialSelectionHorizontally
+  commentId: F:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
+  nameWithType: CombinationDialPuzzle._dialSelectionHorizontally
 - uid: Studio23.SS2.PuzzleSystem.Core.DialController
   name: DialController
   href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html
   commentId: T:Studio23.SS2.PuzzleSystem.Core.DialController
   fullName: Studio23.SS2.PuzzleSystem.Core.DialController
   nameWithType: DialController
-- uid: Studio23.SS2.PuzzleSystem.Core.DialController.#ctor(Studio23.SS2.PuzzleSystem.Data.DialInfo)
-  name: DialController(DialInfo)
-  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController__ctor_Studio23_SS2_PuzzleSystem_Data_DialInfo_
-  commentId: M:Studio23.SS2.PuzzleSystem.Core.DialController.#ctor(Studio23.SS2.PuzzleSystem.Data.DialInfo)
-  name.vb: New(DialInfo)
-  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialController(Studio23.SS2.PuzzleSystem.Data.DialInfo)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Core.DialController.New(Studio23.SS2.PuzzleSystem.Data.DialInfo)
-  nameWithType: DialController.DialController(DialInfo)
-  nameWithType.vb: DialController.New(DialInfo)
+- uid: Studio23.SS2.PuzzleSystem.Core.DialController.#ctor(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  name: DialController(BaseDialInfo)
+  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController__ctor_Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.DialController.#ctor(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  name.vb: New(BaseDialInfo)
+  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialController(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.DialController.New(Studio23.SS2.PuzzleSystem.Data.BaseDialInfo)
+  nameWithType: DialController.DialController(BaseDialInfo)
+  nameWithType.vb: DialController.New(BaseDialInfo)
 - uid: Studio23.SS2.PuzzleSystem.Core.DialController.#ctor*
   name: DialController
   href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController__ctor_
@@ -332,19 +399,19 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.DialController.AdjustValue
   nameWithType: DialController.AdjustValue
-- uid: Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_DialInfo
-  commentId: P:Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
-  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
-  nameWithType: DialController.DialInfo
-- uid: Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo*
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_DialInfo_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
+- uid: Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_DialIndexInfo
+  commentId: P:Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo
+  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo
+  nameWithType: DialController.DialIndexInfo
+- uid: Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo*
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_DialIndexInfo_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialInfo
-  nameWithType: DialController.DialInfo
+  fullName: Studio23.SS2.PuzzleSystem.Core.DialController.DialIndexInfo
+  nameWithType: DialController.DialIndexInfo
 - uid: Studio23.SS2.PuzzleSystem.Core.DialController.SetValue(System.Int32)
   name: SetValue(int)
   href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html#Studio23_SS2_PuzzleSystem_Core_DialController_SetValue_System_Int32_
@@ -386,121 +453,232 @@ references:
   commentId: N:Studio23.SS2.PuzzleSystem.Data
   fullName: Studio23.SS2.PuzzleSystem.Data
   nameWithType: Studio23.SS2.PuzzleSystem.Data
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html
-  commentId: T:Studio23.SS2.PuzzleSystem.Data.DialInfo
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo
-  nameWithType: DialInfo
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
-  name: DialInfo(int, int, int, int)
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo
+  name: BaseDialInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo
+  nameWithType: BaseDialInfo
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue(System.Int32)
+  name: AdjustValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_AdjustValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue(System.Int32)
+  name.vb: AdjustValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue(Integer)
+  nameWithType: BaseDialInfo.AdjustValue(int)
+  nameWithType.vb: BaseDialInfo.AdjustValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue*
+  name: AdjustValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_AdjustValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.AdjustValue
+  nameWithType: BaseDialInfo.AdjustValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue
+  name: CurrentValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_CurrentValue
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue
+  nameWithType: BaseDialInfo.CurrentValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue*
+  name: CurrentValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_CurrentValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.CurrentValue
+  nameWithType: BaseDialInfo.CurrentValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID
+  name: IndexID
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_IndexID
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID
+  nameWithType: BaseDialInfo.IndexID
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID*
+  name: IndexID
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_IndexID_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.IndexID
+  nameWithType: BaseDialInfo.IndexID
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue
+  name: MaxValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MaxValue
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue
+  nameWithType: BaseDialInfo.MaxValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue*
+  name: MaxValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MaxValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MaxValue
+  nameWithType: BaseDialInfo.MaxValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue
+  name: MinValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MinValue
+  commentId: P:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue
+  nameWithType: BaseDialInfo.MinValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue*
+  name: MinValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_MinValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.MinValue
+  nameWithType: BaseDialInfo.MinValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.OnValueChanged
+  name: OnValueChanged
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_OnValueChanged
+  commentId: E:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.OnValueChanged
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.OnValueChanged
+  nameWithType: BaseDialInfo.OnValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue(System.Int32)
+  name: SetCurrentValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetCurrentValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue(System.Int32)
+  name.vb: SetCurrentValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue(Integer)
+  nameWithType: BaseDialInfo.SetCurrentValue(int)
+  nameWithType.vb: BaseDialInfo.SetCurrentValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue*
+  name: SetCurrentValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetCurrentValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetCurrentValue
+  nameWithType: BaseDialInfo.SetCurrentValue
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue(System.Int32)
+  name: SetValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue(System.Int32)
+  name.vb: SetValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue(Integer)
+  nameWithType: BaseDialInfo.SetValue(int)
+  nameWithType.vb: BaseDialInfo.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue*
+  name: SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html#Studio23_SS2_PuzzleSystem_Data_BaseDialInfo_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.SetValue
+  nameWithType: BaseDialInfo.SetValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo
+  name: DialAngleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo
+  nameWithType: DialAngleInfo
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: DialAngleInfo(int, int, int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
   name.vb: New(Integer, Integer, Integer, Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.DialInfo(int, int, int, int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialInfo.New(Integer, Integer, Integer, Integer)
-  nameWithType: DialInfo.DialInfo(int, int, int, int)
-  nameWithType.vb: DialInfo.New(Integer, Integer, Integer, Integer)
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor*
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo__ctor_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.#ctor
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.DialAngleInfo(int, int, int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.New(Integer, Integer, Integer, Integer)
+  nameWithType: DialAngleInfo.DialAngleInfo(int, int, int, int)
+  nameWithType.vb: DialAngleInfo.New(Integer, Integer, Integer, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.#ctor*
+  name: DialAngleInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo__ctor_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.DialInfo
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialInfo.New
-  nameWithType: DialInfo.DialInfo
-  nameWithType.vb: DialInfo.New
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue(System.Int32)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.DialAngleInfo
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.New
+  nameWithType: DialAngleInfo.DialAngleInfo
+  nameWithType.vb: DialAngleInfo.New
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue(System.Int32)
   name: AdjustValue(int)
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_AdjustValue_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue(System.Int32)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo_AdjustValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue(System.Int32)
   name.vb: AdjustValue(Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue(int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue(Integer)
-  nameWithType: DialInfo.AdjustValue(int)
-  nameWithType.vb: DialInfo.AdjustValue(Integer)
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue*
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue(Integer)
+  nameWithType: DialAngleInfo.AdjustValue(int)
+  nameWithType.vb: DialAngleInfo.AdjustValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue*
   name: AdjustValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_AdjustValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo_AdjustValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.AdjustValue
-  nameWithType: DialInfo.AdjustValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue
-  name: CurrentValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_CurrentValue
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue
-  nameWithType: DialInfo.CurrentValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue*
-  name: CurrentValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_CurrentValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.CurrentValue
-  nameWithType: DialInfo.CurrentValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID
-  name: IndexID
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_IndexID
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID
-  nameWithType: DialInfo.IndexID
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID*
-  name: IndexID
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_IndexID_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.IndexID
-  nameWithType: DialInfo.IndexID
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue
-  name: MaxValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_MaxValue
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue
-  nameWithType: DialInfo.MaxValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue*
-  name: MaxValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_MaxValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.MaxValue
-  nameWithType: DialInfo.MaxValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue
-  name: MinValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_MinValue
-  commentId: P:Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue
-  nameWithType: DialInfo.MinValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue*
-  name: MinValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_MinValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.MinValue
-  nameWithType: DialInfo.MinValue
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
-  name: OnValueChanged
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_OnValueChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.OnValueChanged
-  nameWithType: DialInfo.OnValueChanged
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.AdjustValue
+  nameWithType: DialAngleInfo.AdjustValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue(System.Int32)
   name: SetValue(int)
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_System_Int32_
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(System.Int32)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue(System.Int32)
   name.vb: SetValue(Integer)
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(int)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue(Integer)
-  nameWithType: DialInfo.SetValue(int)
-  nameWithType.vb: DialInfo.SetValue(Integer)
-- uid: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue*
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue(Integer)
+  nameWithType: DialAngleInfo.SetValue(int)
+  nameWithType.vb: DialAngleInfo.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue*
   name: SetValue
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialInfo.html#Studio23_SS2_PuzzleSystem_Data_DialInfo_SetValue_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialAngleInfo_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialInfo.SetValue
-  nameWithType: DialInfo.SetValue
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialAngleInfo.SetValue
+  nameWithType: DialAngleInfo.SetValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html
+  commentId: T:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo
+  nameWithType: DialIndexInfo
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: DialIndexInfo(int, int, int, int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(Integer, Integer, Integer, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.DialIndexInfo(int, int, int, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.New(Integer, Integer, Integer, Integer)
+  nameWithType: DialIndexInfo.DialIndexInfo(int, int, int, int)
+  nameWithType.vb: DialIndexInfo.New(Integer, Integer, Integer, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.#ctor*
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo__ctor_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.DialIndexInfo
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.New
+  nameWithType: DialIndexInfo.DialIndexInfo
+  nameWithType.vb: DialIndexInfo.New
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue(System.Int32)
+  name: AdjustValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo_AdjustValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue(System.Int32)
+  name.vb: AdjustValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue(Integer)
+  nameWithType: DialIndexInfo.AdjustValue(int)
+  nameWithType.vb: DialIndexInfo.AdjustValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue*
+  name: AdjustValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo_AdjustValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.AdjustValue
+  nameWithType: DialIndexInfo.AdjustValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue(System.Int32)
+  name: SetValue(int)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo_SetValue_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue(System.Int32)
+  name.vb: SetValue(Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue(int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue(Integer)
+  nameWithType: DialIndexInfo.SetValue(int)
+  nameWithType.vb: DialIndexInfo.SetValue(Integer)
+- uid: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue*
+  name: SetValue
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.html#Studio23_SS2_PuzzleSystem_Data_DialIndexInfo_SetValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialIndexInfo.SetValue
+  nameWithType: DialIndexInfo.SetValue
 - uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
   name: DialPuzzleInfo
   href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html
@@ -784,19 +962,19 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.AdjustValue
   nameWithType: IDial.AdjustValue
-- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_DialInfo
-  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
-  nameWithType: IDial.DialInfo
-- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo*
-  name: DialInfo
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_DialInfo_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_DialIndexInfo
+  commentId: P:Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo
+  nameWithType: IDial.DialIndexInfo
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo*
+  name: DialIndexInfo
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_DialIndexInfo_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo
   isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialInfo
-  nameWithType: IDial.DialInfo
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDial.DialIndexInfo
+  nameWithType: IDial.DialIndexInfo
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDial.SetValue(System.Int32)
   name: SetValue(int)
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDial.html#Studio23_SS2_PuzzleSystem_Interface_IDial_SetValue_System_Int32_
@@ -838,6 +1016,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDial
   nameWithType: IDialPuzzle.AdjustDial
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction,System.Int32)
+  name: AdjustDialWithValue(Direction, int)
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDialWithValue_Studio23_SS2_PuzzleSystem_Data_Direction_System_Int32_
+  commentId: M:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction,System.Int32)
+  name.vb: AdjustDialWithValue(Direction, Integer)
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction, int)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction, Integer)
+  nameWithType: IDialPuzzle.AdjustDialWithValue(Direction, int)
+  nameWithType.vb: IDialPuzzle.AdjustDialWithValue(Direction, Integer)
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue*
+  name: AdjustDialWithValue
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDialWithValue_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue
+  nameWithType: IDialPuzzle.AdjustDialWithValue
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
   name: Dials
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_Dials
@@ -851,12 +1045,12 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials
   nameWithType: IDialPuzzle.Dials
-- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
-  name: OnDialValueChanged
-  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnDialValueChanged
-  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
-  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged
-  nameWithType: IDialPuzzle.OnDialValueChanged
+- uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialUpdated
+  name: OnDialUpdated
+  href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnDialUpdated
+  commentId: E:Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialUpdated
+  fullName: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialUpdated
+  nameWithType: IDialPuzzle.OnDialUpdated
 - uid: Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnPuzzleSolved
   name: OnPuzzleSolved
   href: api/Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.html#Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnPuzzleSolved

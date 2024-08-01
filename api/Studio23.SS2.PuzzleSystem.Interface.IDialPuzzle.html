@@ -165,7 +165,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_Dials" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.Dials">
   Dials
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Puzzle all dials information.</p>
@@ -228,7 +228,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SelectedDialIndex" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SelectedDialIndex">
   SelectedDialIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Currently selected dial.</p>
@@ -326,11 +326,47 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDialWithValue_" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue*"></a>
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_AdjustDialWithValue_Studio23_SS2_PuzzleSystem_Data_Direction_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.AdjustDialWithValue(Studio23.SS2.PuzzleSystem.Data.Direction,System.Int32)">
+  AdjustDialWithValue(Direction, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles player input to move the dial.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AdjustDialWithValue(Direction input, int newValue = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="Studio23.SS2.PuzzleSystem.Data.Direction.html">Direction</a></dt>
+    <dd><p>Input representing dial movement.</p>
+</dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>NewValue representing selected dial target value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues*"></a>
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_System_Collections_Generic_List_System_Int32__" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Collections.Generic.List{System.Int32})">
   SetCurrentValues(List&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the current values of the puzzle dials and checks if the puzzle is solved.</p>
@@ -363,7 +399,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_SetCurrentValues_System_Int32_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.SetCurrentValues(System.Int32,System.Int32)">
   SetCurrentValues(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the value of a specific dial at the given index and checks if the puzzle is solved.</p>
@@ -433,16 +469,16 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnDialValueChanged" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialValueChanged">
-  OnDialValueChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnDialUpdated" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnDialUpdated">
+  OnDialUpdated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action&lt;DialInfo&gt; OnDialValueChanged</code></pre>
+    <pre><code class="lang-csharp hljs">event Action&lt;BaseDialInfo&gt; OnDialUpdated</code></pre>
   </div>
 
 
@@ -452,7 +488,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.DialInfo.html">DialInfo</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.BaseDialInfo.html">BaseDialInfo</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -465,7 +501,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnPuzzleSolved" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnPuzzleSolved">
   OnPuzzleSolved
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Fired when Puzzle is Solved first time</p>
@@ -496,7 +532,7 @@ Interface IDialPuzzle  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Studio23_SS2_PuzzleSystem_Interface_IDialPuzzle_OnSelectedDialChanged" data-uid="Studio23.SS2.PuzzleSystem.Interface.IDialPuzzle.OnSelectedDialChanged">
   OnSelectedDialChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Interface/IDialPuzzle.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when dial selection changed.</p>
