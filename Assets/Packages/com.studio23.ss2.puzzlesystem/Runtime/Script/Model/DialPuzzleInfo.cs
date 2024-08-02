@@ -41,7 +41,9 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// </summary>
         public bool IsPuzzleSolved => CheckPuzzleSolved();
 
-        public bool CheckPuzzleSolved()
+        public bool NeedKeyPress = false;
+
+        private bool CheckPuzzleSolved()
         {
             var isPuzzleUnlock = true;
             for (int i = 0; i < ResultValues.Count; i++)
@@ -81,7 +83,7 @@ namespace Studio23.SS2.PuzzleSystem.Data
         /// <summary>
         /// Initializes a new instance of the PuzzleInfo class with the specified properties.
         /// </summary>
-        public DialPuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, List<PuzzleHints> puzzleHints)
+        public DialPuzzleInfo(string puzzleName, int minValue, int maxValue, List<int> resultValues, List<int> currentValues, List<PuzzleHints> puzzleHints, bool needKeyPress)
         {
             PuzzleName = puzzleName;
             MinValue = minValue;
@@ -89,6 +91,7 @@ namespace Studio23.SS2.PuzzleSystem.Data
             ResultValues = resultValues;
             CurrentValues = currentValues;
             PuzzleHints = puzzleHints;
+            NeedKeyPress = needKeyPress;
             // Save the current time as the start time
             StartTime = DateTime.Now;
         }

@@ -12,7 +12,8 @@ namespace Studio23.SS2.PuzzleSystem.Core
 {
     public class CombinationDialPuzzle : IDialPuzzle
     {
-        [SerializeField] public bool _dialSelectionHorizontally;
+        [SerializeField] private bool _dialSelectionHorizontally;
+
         private int _selectedDial { get; set; }
 
         public int SelectedDial
@@ -67,7 +68,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
         public event Action<BaseDialInfo> OnDialUpdated; 
 
         public event Action  OnPuzzleSolved;
-        public bool CheckPuzzleSolved() => PuzzleInfo.CheckPuzzleSolved();
+        public bool CheckPuzzleSolved() => PuzzleInfo.IsPuzzleSolved;
 
         /// <inheritdoc />
         public async UniTask ForceSolvePuzzle(bool instant)
@@ -100,7 +101,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
             //  Initialize/Setup each Dials
             Dials = new IDial[_count];
-            
+
         }
 
         public void PopulateDial(IDial[] dials)
@@ -129,10 +130,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
                 IsPuzzleStarted = true; // Invoke OnPuzzleStart 
                 SelectedDial = 0; // Fire OnSelectedDialChanged
 
-                if (PuzzleInfo.IsPuzzleSolved)
-                {
-                    OnPuzzleSolved?.Invoke();
-                }
+                CheckPuzzleSolved();
             }
             else
             {
@@ -215,10 +213,8 @@ namespace Studio23.SS2.PuzzleSystem.Core
                     break;
             }
 
-            if (PuzzleInfo.IsPuzzleSolved)
-                OnPuzzleSolved?.Invoke();
+            CheckPuzzleSolved();
         }
-
         public void AdjustDial(Vector2 input)
         {
             if (input.y > 0)
@@ -259,12 +255,12 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
         public void SetCurrentValues(int index, int newCurrentValue)
         {
-            var wasPuzzleSolevd = PuzzleInfo.CheckPuzzleSolved();
+            var wasPuzzleSolevd = PuzzleInfo.IsPuzzleSolved;
             Dials[index].AdjustValue(newCurrentValue);
             PuzzleInfo.SetCurrentValues(index, Dials[index].DialIndexInfo.CurrentValue);
-            if (!wasPuzzleSolevd && PuzzleInfo.CheckPuzzleSolved())
+            if (!wasPuzzleSolevd)
             {
-                OnPuzzleSolved?.Invoke();
+                CheckPuzzleSolved();
             }
         }
 
@@ -276,7 +272,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
         /// <param name="newCurrentValues">The new values for the puzzle dials.</param>
         public void SetCurrentValues(List<int> newCurrentValues)
         {
-            var wasPuzzleSolevd = PuzzleInfo.CheckPuzzleSolved();
+            var wasPuzzleSolevd = PuzzleInfo.IsPuzzleSolved;
 
             for (int i = 0; i < newCurrentValues.Count; i++)
             {
@@ -284,10 +280,27 @@ namespace Studio23.SS2.PuzzleSystem.Core
                 PuzzleInfo.SetCurrentValues(i, Dials[i].DialIndexInfo.CurrentValue);
             }
 
-            if (!wasPuzzleSolevd && PuzzleInfo.CheckPuzzleSolved())
+            if (!wasPuzzleSolevd)
             {
-                OnPuzzleSolved?.Invoke();
+                CheckConditionalSolvePuzzle();
             }
+        }
+
+
+        public void CheckConditionalSolvePuzzle(bool pressedKey = false)
+        {
+            var isPuzzleSolved = false;
+
+            if (!PuzzleInfo.NeedKeyPress || pressedKey)
+            {
+                if (PuzzleInfo.IsPuzzleSolved) 
+                    isPuzzleSolved = true;
+            }
+
+            
+            if(isPuzzleSolved)
+                OnPuzzleSolved?.Invoke();
+
         }
     }
 }
