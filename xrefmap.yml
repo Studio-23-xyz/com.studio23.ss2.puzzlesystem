@@ -67,6 +67,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.AdjustDialWithValue
   nameWithType: CombinationDialPuzzle.AdjustDialWithValue
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle(System.Boolean)
+  name: CheckConditionalSolvePuzzle(bool)
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckConditionalSolvePuzzle_System_Boolean_
+  commentId: M:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle(System.Boolean)
+  name.vb: CheckConditionalSolvePuzzle(Boolean)
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle(bool)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle(Boolean)
+  nameWithType: CombinationDialPuzzle.CheckConditionalSolvePuzzle(bool)
+  nameWithType.vb: CombinationDialPuzzle.CheckConditionalSolvePuzzle(Boolean)
+- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle*
+  name: CheckConditionalSolvePuzzle
+  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckConditionalSolvePuzzle_
+  commentId: Overload:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle
+  isSpec: "True"
+  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckConditionalSolvePuzzle
+  nameWithType: CombinationDialPuzzle.CheckConditionalSolvePuzzle
 - uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.CheckPuzzleSolved
   name: CheckPuzzleSolved()
   href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle_CheckPuzzleSolved
@@ -352,12 +368,6 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.StopPuzzle
   nameWithType: CombinationDialPuzzle.StopPuzzle
-- uid: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
-  name: _dialSelectionHorizontally
-  href: api/Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle.html#Studio23_SS2_PuzzleSystem_Core_CombinationDialPuzzle__dialSelectionHorizontally
-  commentId: F:Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
-  fullName: Studio23.SS2.PuzzleSystem.Core.CombinationDialPuzzle._dialSelectionHorizontally
-  nameWithType: CombinationDialPuzzle._dialSelectionHorizontally
 - uid: Studio23.SS2.PuzzleSystem.Core.DialController
   name: DialController
   href: api/Studio23.SS2.PuzzleSystem.Core.DialController.html
@@ -685,15 +695,15 @@ references:
   commentId: T:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
   fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo
   nameWithType: DialPuzzleInfo
-- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
-  name: DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})
-  name.vb: New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.DialPuzzleInfo(string, int, int, System.Collections.Generic.List<int>, System.Collections.Generic.List<int>, System.Collections.Generic.List<Studio23.SS2.PuzzleSystem.Data.PuzzleHints>)
-  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.New(String, Integer, Integer, System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Studio23.SS2.PuzzleSystem.Data.PuzzleHints))
-  nameWithType: DialPuzzleInfo.DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>)
-  nameWithType.vb: DialPuzzleInfo.New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints))
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints},System.Boolean)
+  name: DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>, bool)
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__System_Boolean_
+  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints},System.Boolean)
+  name.vb: New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints), Boolean)
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.DialPuzzleInfo(string, int, int, System.Collections.Generic.List<int>, System.Collections.Generic.List<int>, System.Collections.Generic.List<Studio23.SS2.PuzzleSystem.Data.PuzzleHints>, bool)
+  fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.New(String, Integer, Integer, System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Integer), System.Collections.Generic.List(Of Studio23.SS2.PuzzleSystem.Data.PuzzleHints), Boolean)
+  nameWithType: DialPuzzleInfo.DialPuzzleInfo(string, int, int, List<int>, List<int>, List<PuzzleHints>, bool)
+  nameWithType.vb: DialPuzzleInfo.New(String, Integer, Integer, List(Of Integer), List(Of Integer), List(Of PuzzleHints), Boolean)
 - uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor*
   name: DialPuzzleInfo
   href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_
@@ -704,19 +714,6 @@ references:
   fullName.vb: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.New
   nameWithType: DialPuzzleInfo.DialPuzzleInfo
   nameWithType.vb: DialPuzzleInfo.New
-- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
-  name: CheckPuzzleSolved()
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved
-  commentId: M:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved()
-  nameWithType: DialPuzzleInfo.CheckPuzzleSolved()
-- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved*
-  name: CheckPuzzleSolved
-  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved_
-  commentId: Overload:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
-  isSpec: "True"
-  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved
-  nameWithType: DialPuzzleInfo.CheckPuzzleSolved
 - uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CurrentValues
   name: CurrentValues
   href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CurrentValues
@@ -769,6 +766,12 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.MinValue
   nameWithType: DialPuzzleInfo.MinValue
+- uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.NeedKeyPress
+  name: NeedKeyPress
+  href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_NeedKeyPress
+  commentId: F:Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.NeedKeyPress
+  fullName: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.NeedKeyPress
+  nameWithType: DialPuzzleInfo.NeedKeyPress
 - uid: Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints
   name: PuzzleHints
   href: api/Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.html#Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleHints

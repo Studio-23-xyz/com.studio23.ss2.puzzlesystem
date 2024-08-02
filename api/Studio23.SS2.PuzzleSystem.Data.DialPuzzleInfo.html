@@ -155,9 +155,9 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <a id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor*"></a>
 
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints})">
-  DialPuzzleInfo(string, int, int, List&lt;int&gt;, List&lt;int&gt;, List&lt;PuzzleHints&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo__ctor_System_String_System_Int32_System_Int32_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_Studio23_SS2_PuzzleSystem_Data_PuzzleHints__System_Boolean_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{Studio23.SS2.PuzzleSystem.Data.PuzzleHints},System.Boolean)">
+  DialPuzzleInfo(string, int, int, List&lt;int&gt;, List&lt;int&gt;, List&lt;PuzzleHints&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the PuzzleInfo class with the specified properties.</p>
@@ -165,7 +165,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DialPuzzleInfo(string puzzleName, int minValue, int maxValue, List&lt;int&gt; resultValues, List&lt;int&gt; currentValues, List&lt;PuzzleHints&gt; puzzleHints)</code></pre>
+    <pre><code class="lang-csharp hljs">public DialPuzzleInfo(string puzzleName, int minValue, int maxValue, List&lt;int&gt; resultValues, List&lt;int&gt; currentValues, List&lt;PuzzleHints&gt; puzzleHints, bool needKeyPress)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -182,10 +182,46 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
     <dd></dd>
     <dt><code>puzzleHints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Studio23.SS2.PuzzleSystem.Data.PuzzleHints.html">PuzzleHints</a>&gt;</dt>
     <dd></dd>
+    <dt><code>needKeyPress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_NeedKeyPress" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.NeedKeyPress">
+  NeedKeyPress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NeedKeyPress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -331,7 +367,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleHints" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleHints">
   PuzzleHints
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the list of hints for the puzzle.</p>
@@ -395,7 +431,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_PuzzleTime" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.PuzzleTime">
   PuzzleTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the time puzzle has been elapsed in seconds.</p>
@@ -459,7 +495,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_StartTime" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.StartTime">
   StartTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the start time when the puzzle is initialized.</p>
@@ -491,42 +527,11 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 </h2>
 
 
-  <a id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved*"></a>
-
-  <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_CheckPuzzleSolved" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.CheckPuzzleSolved">
-  CheckPuzzleSolved()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CheckPuzzleSolved()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues*"></a>
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_System_Collections_Generic_List_System_Int32__" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Collections.Generic.List{System.Int32})">
   SetCurrentValues(List&lt;int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the current values of the puzzle dials and checks if the puzzle is solved.</p>
@@ -559,7 +564,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_SetCurrentValues_System_Int32_System_Int32_" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.SetCurrentValues(System.Int32,System.Int32)">
   SetCurrentValues(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the value of a specific dial at the given index and checks if the puzzle is solved.</p>
@@ -595,7 +600,7 @@ Class DialPuzzleInfo  <a class="header-action link-secondary" title="View source
 
   <h3 id="Studio23_SS2_PuzzleSystem_Data_DialPuzzleInfo_Validate" data-uid="Studio23.SS2.PuzzleSystem.Data.DialPuzzleInfo.Validate">
   Validate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.puzzlesystem/blob/main/Assets/Packages/com.studio23.ss2.puzzlesystem/Runtime/Script/Model/DialPuzzleInfo.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates the puzzle information.</p>
