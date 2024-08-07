@@ -130,7 +130,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
                 IsPuzzleStarted = true; // Invoke OnPuzzleStart 
                 SelectedDial = 0; // Fire OnSelectedDialChanged
 
-                CheckPuzzleSolved();
+                CheckConditionalSolvePuzzle();
             }
             else
             {
@@ -213,7 +213,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
                     break;
             }
 
-            CheckPuzzleSolved();
+            CheckConditionalSolvePuzzle();
         }
         public void AdjustDial(Vector2 input)
         {
@@ -260,7 +260,7 @@ namespace Studio23.SS2.PuzzleSystem.Core
             PuzzleInfo.SetCurrentValues(index, Dials[index].DialIndexInfo.CurrentValue);
             if (!wasPuzzleSolevd)
             {
-                CheckPuzzleSolved();
+                CheckConditionalSolvePuzzle();
             }
         }
 
@@ -289,18 +289,11 @@ namespace Studio23.SS2.PuzzleSystem.Core
 
         public void CheckConditionalSolvePuzzle(bool pressedKey = false)
         {
-            var isPuzzleSolved = false;
-
             if (!PuzzleInfo.NeedKeyPress || pressedKey)
             {
-                if (PuzzleInfo.IsPuzzleSolved) 
-                    isPuzzleSolved = true;
+                if (PuzzleInfo.IsPuzzleSolved)
+                    OnPuzzleSolved?.Invoke();
             }
-
-            
-            if(isPuzzleSolved)
-                OnPuzzleSolved?.Invoke();
-
         }
     }
 }
