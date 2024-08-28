@@ -26,7 +26,6 @@ namespace Studio23.SS2.PuzzleSystem.Core
                     Debug.LogError($"Dials is empty!");
                     return;
                 }
-                Debug.Log($"Selected Dial {_selectedDial} -> {value}");
                 if (value >= Dials.Length) _selectedDial = 0;
                 else if (value < 0) _selectedDial = Dials.Length - 1;
                 else _selectedDial = value;
